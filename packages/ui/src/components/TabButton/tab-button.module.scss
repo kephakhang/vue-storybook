@@ -1,0 +1,91 @@
+$color-primary: #3491ff;
+$color-secondary: #3585e5;
+$color-background: #deedff;
+$color-border: #d0d0d0;
+$color-text-primary: #888888;
+$color-text-secondary: #8b8b8b;
+$color-white: #ffffff;
+$font_stack: Helvetica Neue, Helvetica, Microsoft Sans Serif, Arial, Arimo;
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  text-align: center;
+  font-family: $font_stack;
+  font-weight: 400;
+  font-size: 0.88rem;
+  transition: 0.3s;
+  border: 0.06rem solid $color-border;
+}
+
+.horizontal {
+  display: flex;
+
+  & > .primary-tab {
+    margin-right: 0.63rem;
+  }
+
+  & > .primary-tab:last-child {
+    margin-right: 0;
+  }
+
+  & > .secondary-tab:first-child {
+    border-radius: 0.2rem 0 0 0.2rem;
+  }
+
+  & > .secondary-tab:not(:first-child) {
+    margin-left: -0.06rem;
+  }
+
+  & > .secondary-tab:last-child {
+    border-radius: 0 0.2rem 0.2rem 0;
+  }
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0.63rem;
+
+  & > .secondary-tab {
+    border-radius: 0.2rem;
+  }
+}
+
+.primary-tab {
+  color: $color-text-primary;
+  background: $color-white;
+  border-radius: 0.2rem;
+  min-width: 5rem;
+
+  &[active] {
+    background: $color-primary;
+    color: $color-white;
+  }
+}
+
+.secondary-tab {
+  color: $color-text-secondary;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  &:hover {
+    background: $color-background;
+    color: $color-secondary;
+  }
+
+  &[active] {
+    background: $color-background;
+    border-color: $color-primary;
+    color: $color-primary;
+    z-index: 1;
+  }
+}

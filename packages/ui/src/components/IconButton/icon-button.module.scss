@@ -1,0 +1,328 @@
+$disabled_color: #fff;
+$customize_table_btn_background_color: #f0f1f3;
+$btn_hover_active_color: #daeeff;
+$btn_hover_active_outline_color: #3585e5;
+$row_inline_action_btn_background_color: #d9d9d9;
+$next_prev_btn_background_color: #3491ff;
+$next_prev_btn_hover_color: #deedff;
+$next_prev_btn_disable_color: #c4c4c4;
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.default {
+  padding: 0.25rem 0.4rem;
+  border-radius: 0.2rem;
+  width: fit-content;
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &[disabled] {
+    color: $disabled_color;
+    border: inherit;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+
+  &.customizing-data-table {
+    background: $customize_table_btn_background_color;
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0.2rem;
+    width: 1.8rem;
+    height: 1.8rem;
+
+    &:hover {
+      background: $btn_hover_active_color;
+      outline: 0.025rem solid $btn_hover_active_outline_color;
+    }
+
+    &[active] {
+      background: $btn_hover_active_color;
+      outline: 0.13rem solid $btn_hover_active_outline_color;
+    }
+  }
+
+  &.filter {
+    content: url("~assets/images/icon/Icon_feather-filter.svg");
+
+    & > .icon_size {
+      width: 0.84rem;
+      height: 0.76rem;
+    }
+  }
+
+  &.custom-colum {
+    content: url("~assets/images/icon/customization-icon.svg");
+  }
+
+  &.kebab-menu {
+    content: url("~assets/images/icon/icon-kebab-menu.svg");
+    padding: 0.44rem 0.4rem;
+  }
+
+  &.edit {
+    content: url("~assets/images/icon/edit-icon-defualt.svg");
+
+    &:hover {
+      content: url("~assets/images/icon/edit-icon-blue.svg");
+    }
+  }
+
+  &.trash {
+    content: url("~assets/images/icon/trash-icon-defualt.svg");
+
+    &:hover {
+      content: url("~assets/images/icon/trash-icon-blue.svg");
+    }
+  }
+
+  &.clone {
+    content: url("~assets/images/icon/clone-icon-defualt.svg");
+
+    &:hover {
+      content: url("~assets/images/icon/clone-icon-blue.svg");
+    }
+  }
+
+  &.check {
+    content: url("~assets/images/icon/check-icon-defualt.svg");
+
+    &[disabled] {
+      content: url("~assets/images/icon/check-icon-disabled.svg");
+      border: transparent;
+      background: transparent;
+    }
+
+    &:hover {
+      content: url("~assets/images/icon/check-icon-blue.svg");
+      background: transparent;
+    }
+  }
+
+  &.previous {
+    content: url("~assets/images/icon/left-arrow-icon-defualt.svg");
+
+    &:hover {
+      content: url("~assets/images/icon/left-arrow-icon-hover.svg");
+    }
+
+    &[disabled] {
+      content: url("~assets/images/icon/left-arrow-icon-disabled.svg");
+      border: transparent;
+      background: transparent;
+    }
+
+    &[active] {
+      content: url("~assets/images/icon/left-arrow-icon-active.svg");
+    }
+  }
+
+  &.left-arrow {
+    content: url("~assets/images/icon/left-arrow-graph-icon-light-blue.svg");
+    padding: unset;
+    background: transparent;
+    border: none;
+    width: 1.13rem;
+    height: 1.06rem;
+
+    &:hover {
+      content: url("~assets/images/icon/left-arrow-graph-icon-blue.svg");
+    }
+
+    &[disabled] {
+      content: url("~assets/images/icon/left-arrow-graph-icon-disabled.svg");
+    }
+  }
+
+  &.add {
+    content: url("~assets/images/icon/plus-icon-defualt.svg");
+  }
+
+  &.remove {
+    content: url("~assets/images/icon/minus-icon-blue.svg");
+  }
+
+  &.row-inline-action-buttons {
+    padding: unset 0.4rem;
+    background: $row_inline_action_btn_background_color;
+    border-color: transparent;
+    border-radius: 0.2rem;
+    width: 1.56rem;
+    height: 1.56rem;
+
+    &:hover {
+      background: $btn_hover_active_color;
+      box-shadow: 0 0.06rem 0.06rem rgba(0, 0, 0, 0.25);
+      border-radius: 0.2rem;
+    }
+  }
+
+  &.next-previous-buttons {
+    background: $next_prev_btn_background_color;
+    border-radius: 0.2rem;
+    width: 1.4rem;
+    height: 1.4rem;
+
+    &:hover {
+      background: $btn_hover_active_outline_color;
+      border-radius: 0.2rem;
+    }
+
+    &[active] {
+      background: $btn_hover_active_outline_color;
+      border: 0.13rem solid $next_prev_btn_hover_color;
+      border-radius: 0.2rem;
+    }
+
+    &[disabled] {
+      border: transparent;
+      background: $next_prev_btn_disable_color;
+      border-radius: 0.2rem;
+    }
+  }
+
+  &.plus-button {
+    padding: 0.38rem unset unset unset;
+    background: $next_prev_btn_background_color;
+    border: 0.06rem solid $next_prev_btn_background_color;
+    box-shadow: inset 0 0 0.4rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.2rem;
+    width: 1.9rem;
+    height: 1.9rem;
+
+    &[active] {
+      border: 0.06rem solid $btn_hover_active_color;
+      box-shadow: inset 0 0 0.94rem rgba(0, 0, 0, 0.25);
+      border-radius: 0.2rem;
+    }
+  }
+
+  &.minus-button {
+    background: $disabled_color;
+    /* CTA Colour/Primary CTA, Hyperlink */
+    border: 0.06rem solid $next_prev_btn_background_color;
+    border-radius: 0.2rem;
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+
+  &.download {
+    content: url("~assets/images/icon/download-icon.svg");
+
+    & > .icon_size {
+      width: 1.13rem;
+      height: 1.4rem;
+    }
+  }
+
+  &.next {
+    transform: rotate(180deg);
+    content: url("~assets/images/icon/left-arrow-icon-defualt.svg");
+
+    &:hover {
+      content: url("~assets/images/icon/left-arrow-icon-hover.svg");
+    }
+
+    & > .icon_size {
+      width: 1.13rem;
+      height: 1.4rem;
+    }
+
+    &[active] {
+      content: url("~assets/images/icon/left-arrow-icon-active.svg");
+    }
+
+    &[disabled] {
+      content: url("~assets/images/icon/left-arrow-icon-disabled.svg");
+    }
+  }
+
+  &.arrow-backward-skinny {
+    content: url("~assets/images/icon/backward-icon-skinny-default.svg");
+
+    &:hover {
+      content: url("~assets/images/icon/backward-icon-skinny-hover.svg");
+    }
+
+    &[disabled] {
+      content: url("~assets/images/icon/backward-icon-skinny-disabled.svg");
+      background-color: transparent;
+    }
+  }
+
+  &.arrow-forward-skinny {
+    content: url("~assets/images/icon/forward-icon-skinny-default.svg");
+
+    &:hover {
+      content: url("~assets/images/icon/forward-icon-skinny-hover.svg");
+    }
+
+    &[disabled] {
+      content: url("~assets/images/icon/forward-icon-skinny-disabled.svg");
+      background-color: transparent;
+    }
+  }
+
+  &.arrow-backward {
+    content: url("~assets/images/icon/left-arrow-graph-icon-blue.svg");
+
+    &:hover {
+      content: url("~assets/images/icon/left-arrow-graph-icon-light-blue.svg");
+    }
+
+    &[disabled] {
+      content: url("~assets/images/icon/left-arrow-graph-icon-disabled.svg");
+      background-color: transparent;
+    }
+  }
+
+  &.arrow-forward {
+    content: url("~assets/images/icon/right-arrow-graph-icon-default.svg");
+
+    &[disabled] {
+      content: url("~assets/images/icon/right-arrow-graph-icon-disabled.svg");
+      background-color: transparent;
+    }
+
+    &:hover {
+      content: url("~assets/images/icon/right-arrow-graph-icon-hover.svg");
+    }
+  }
+
+  &.bar-filter {
+    content: url("~assets/images/icon/bar-filter.svg");
+
+    &[disabled] {
+      background-color: unset;
+    }
+  }
+
+  &.expand {
+    content: url("~assets/images/icon/expandview.svg");
+
+    &:hover {
+      background-color: $btn_hover_active_color;
+      outline: 0.02rem solid $btn_hover_active_outline_color;
+    }
+
+    &[active] {
+      background-color: $btn_hover_active_color;
+      border: 0.06rem solid $btn_hover_active_outline_color;
+    }
+
+    &[disabled] {
+      background-color: unset;
+    }
+  }
+}

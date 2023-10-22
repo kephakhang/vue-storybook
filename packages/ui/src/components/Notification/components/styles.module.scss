@@ -1,0 +1,29 @@
+table {
+  text-align: left;
+  border: 1px solid #c9ced2;
+  border-collapse: collapse;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4b4b4b;
+}
+
+table th {
+  font-weight: 700;
+}
+
+table td,
+table th {
+  padding: 12px 16px;
+}
+
+td > p {
+  margin: 0;
+}
+
+table tr:nth-child(odd) td {
+  background-color: #f2f2f2;
+}
+
+.subtitle {
+  font-size: 12px;
+}

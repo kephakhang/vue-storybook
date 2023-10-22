@@ -1,0 +1,138 @@
+/* Color variables */
+$primary_color: #3585e5;
+$shadow_color: rgba(0, 0, 0, 0.15);
+$border_color: #4b4b4b;
+$background_color: #ffffff;
+$divider_color: #f0f1f3;
+$positive_color: rgb(71, 181, 118);
+$text_color: rgb(139, 139, 139);
+$lead_trail_color: red;
+
+@mixin common_attributes($size, $weight, $line_height, $align, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line_height;
+  letter-spacing: 0;
+  text-align: $align;
+  color: $color;
+}
+.tab_overview {
+  flex: 1;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  border: 0.2rem solid transparent;
+  border-radius: 0.2rem;
+  height: fit-content;
+  min-width: 12.5rem;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+
+  &:hover {
+    border: 0.063rem solid $primary_color;
+  }
+
+  &:hover::after {
+    border: 0.063rem solid $primary_color;
+  }
+
+  &:active::after {
+    border: 0.2rem solid $primary_color;
+  }
+
+  &:active {
+    border: 0.2rem solid $primary_color;
+  }
+
+  &[active]::after {
+    border: 0.2rem solid $primary_color;
+  }
+
+  &[active] {
+    border: 0.2rem solid $primary_color;
+  }
+
+  &.top {
+    flex-direction: column;
+    box-shadow: 0 0.2rem 0.25rem 0 $shadow_color;
+
+    &::after {
+      top: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0.25rem 0.25rem 0.44rem -0.2rem;
+      transform: rotate(45deg) translate(-1.4rem, 0);
+      z-index: 0;
+      background: $background_color;
+    }
+    &.tab_lead {
+      padding: 0.063rem auto 0.25rem;
+    }
+  }
+  &.bottom {
+    flex-direction: column-reverse;
+    box-shadow: 0 -0.2rem 0.25rem $shadow_color;
+
+    &::after {
+      bottom: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0.25rem -0.3rem 0.44rem -0.25rem;
+      transform: rotate(-45deg) translate(-1.4rem, 0);
+      z-index: 0;
+      background: $background_color;
+    }
+    &.tab_lead {
+      padding: 0.063rem auto 0.25rem;
+    }
+  }
+  .tab_lead {
+    display: flex;
+    padding: auto 0.5rem;
+    justify-content: space-between;
+
+    .lead_label {
+      @include common_attributes(1rem, 600, 1.063rem, left, $border_color);
+    }
+
+    &.lead_trail {
+      @include common_attributes(
+        0.8rem,
+        400,
+        0.8rem,
+        center,
+        $lead_trail_color
+      );
+    }
+    .positive {
+      color: $positive_color;
+    }
+    &::after {
+      display: block;
+      height: 0.063rem;
+      background-color: $divider_color;
+    }
+  }
+
+  .tab_divider {
+    height: 0.063rem;
+    background-color: $divider_color;
+  }
+
+  .tab_content {
+    @include common_attributes(2rem, 400, 2.44rem, center, $text_color);
+    font-style: normal;
+    position: relative;
+    z-index: 1;
+    background: $background_color;
+    height: 3.88rem;
+
+    & > span {
+      padding: 0.75rem;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "rm -rf ./node_modules/@types/react && find ./node_modules/.pnpm -type d -name '@types+react@*' -print0 | xargs -0 rm -rf",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,md,vue,js,json}\"",
+    "build:storybook": "turbo build:storybook",
+    "clean": "turbo clean && rm -rf node_modules && rm pnpm-lock.yaml",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-config-custom": "workspace:*",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.1",
+    "prettier": "^3.0.3",
+    "turbo": "^1.10.15"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "packageManager": "pnpm@8.9.2",
+  "pnpm": {
+    "overrides": {
+      "vue-template-compiler": "2.6.14"
+    },
+    "packageExtensions": {
+      "vue-template-compiler": {
+        "peerDependencies": {
+          "vue": "2.6.14"
+        }
+      }
+    },
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "@storybook/vue-vite>vue": "2.6.14"
+      },
+      "allowAny": [
+        "react",
+        "react-dom"
+      ]
+    },
+    "patchedDependencies": {
+      "bingmaps@2.0.3": "patches/bingmaps@2.0.3.patch"
+    }
+  }
+}

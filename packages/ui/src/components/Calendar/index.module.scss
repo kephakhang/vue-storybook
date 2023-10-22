@@ -1,0 +1,15 @@
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 46px;
+}
+
+.calendar-single {
+  padding: 21px;
+  width: 268px;
+}
+
+.box-shadow {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+}

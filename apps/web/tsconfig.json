@@ -1,0 +1,14 @@
+{
+  "extends": "tsconfig/vuejs.json",
+  "include": ["src", "src/**/*.json"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    }
+  },
+  "vueCompilerOptions": {
+    "target": 3.3
+  }
+}

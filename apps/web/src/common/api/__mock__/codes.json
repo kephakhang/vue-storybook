@@ -1,0 +1,4374 @@
+{
+  "PriorityType": [
+    {
+      "code": "LOW",
+      "title": "Low",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MEDIUM",
+      "title": "Medium",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "HIGH",
+      "title": "High",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "ChartDataType": [
+    {
+      "code": "QUANTITY",
+      "title": "Quantity",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MAXIMUM_CAPACITY",
+      "title": "Maximum Capacity",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CYCLE_TIME",
+      "title": "Cycle Time",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "APPROVED_CYCLE_TIME",
+      "title": "Approved Cycle Time",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "UPTIME",
+      "title": "Uptime",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CYCLE_TIME_ANALYSIS",
+      "title": "Cycle Time Analysis",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TEMPERATURE_ANALYSIS",
+      "title": "Temperature Analysis",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CYCLE_TIME_DASHBOARD",
+      "title": "Cycle Time Dashboard",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "UseageType": [
+    {
+      "code": "AFTERMARKET",
+      "title": "Aftermarket",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TO_MARKET",
+      "title": "To-Market",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "BACKUP",
+      "title": "Backup",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "Event": [
+    {
+      "code": "RECONNECT",
+      "title": "Reconnect",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DISCONNECT",
+      "title": "Disconnect",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "EquipmentType": [
+    {
+      "code": "TERMINAL",
+      "title": "Terminal",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COUNTER",
+      "title": "Counter",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MOLD",
+      "title": "Tooling",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "CountryCode": [
+    {
+      "code": "AF",
+      "title": "Afghanistan",
+      "description": "93",
+      "enabled": true
+    },
+    {
+      "code": "AL",
+      "title": "Albania",
+      "description": "355",
+      "enabled": true
+    },
+    {
+      "code": "DZ",
+      "title": "Algeria",
+      "description": "213",
+      "enabled": true
+    },
+    {
+      "code": "AS",
+      "title": "American Samoa",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "AD",
+      "title": "Andorra",
+      "description": "376",
+      "enabled": true
+    },
+    {
+      "code": "AO",
+      "title": "Angola",
+      "description": "244",
+      "enabled": true
+    },
+    {
+      "code": "AI",
+      "title": "Anguilla",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "AG",
+      "title": "Antigua",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "AR",
+      "title": "Argentina",
+      "description": "54",
+      "enabled": true
+    },
+    {
+      "code": "AM",
+      "title": "Armenia",
+      "description": "374",
+      "enabled": true
+    },
+    {
+      "code": "AW",
+      "title": "Aruba",
+      "description": "297",
+      "enabled": true
+    },
+    {
+      "code": "AU",
+      "title": "Australia",
+      "description": "61",
+      "enabled": true
+    },
+    {
+      "code": "AT",
+      "title": "Austria",
+      "description": "43",
+      "enabled": true
+    },
+    {
+      "code": "AZ",
+      "title": "Azerbaijan",
+      "description": "994",
+      "enabled": true
+    },
+    {
+      "code": "BH",
+      "title": "Bahrain",
+      "description": "973",
+      "enabled": true
+    },
+    {
+      "code": "BD",
+      "title": "Bangladesh",
+      "description": "880",
+      "enabled": true
+    },
+    {
+      "code": "BB",
+      "title": "Barbados",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "BY",
+      "title": "Belarus",
+      "description": "375",
+      "enabled": true
+    },
+    {
+      "code": "BE",
+      "title": "Belgium",
+      "description": "32",
+      "enabled": true
+    },
+    {
+      "code": "BZ",
+      "title": "Belize",
+      "description": "501",
+      "enabled": true
+    },
+    {
+      "code": "BJ",
+      "title": "Benin",
+      "description": "229",
+      "enabled": true
+    },
+    {
+      "code": "BM",
+      "title": "Bermuda",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "BT",
+      "title": "Bhutan",
+      "description": "975",
+      "enabled": true
+    },
+    {
+      "code": "BO",
+      "title": "Bolivia",
+      "description": "591",
+      "enabled": true
+    },
+    {
+      "code": "BQ",
+      "title": "Bonaire, Sint Eustatius and Saba",
+      "description": "599",
+      "enabled": true
+    },
+    {
+      "code": "BA",
+      "title": "Bosnia and Herzegovina",
+      "description": "387",
+      "enabled": true
+    },
+    {
+      "code": "BW",
+      "title": "Botswana",
+      "description": "267",
+      "enabled": true
+    },
+    {
+      "code": "BR",
+      "title": "Brazil",
+      "description": "55",
+      "enabled": true
+    },
+    {
+      "code": "IO",
+      "title": "British Indian Ocean Territory",
+      "description": "246",
+      "enabled": true
+    },
+    {
+      "code": "VG",
+      "title": "British Virgin Islands",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "BN",
+      "title": "Brunei",
+      "description": "673",
+      "enabled": true
+    },
+    {
+      "code": "BG",
+      "title": "Bulgaria",
+      "description": "359",
+      "enabled": true
+    },
+    {
+      "code": "BF",
+      "title": "Burkina Faso",
+      "description": "226",
+      "enabled": true
+    },
+    {
+      "code": "BI",
+      "title": "Burundi",
+      "description": "257",
+      "enabled": true
+    },
+    {
+      "code": "KH",
+      "title": "Cambodia",
+      "description": "855",
+      "enabled": true
+    },
+    {
+      "code": "CM",
+      "title": "Cameroon",
+      "description": "237",
+      "enabled": true
+    },
+    {
+      "code": "CA",
+      "title": "Canada",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "CV",
+      "title": "Cape Verde",
+      "description": "238",
+      "enabled": true
+    },
+    {
+      "code": "KY",
+      "title": "Cayman Islands",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "CF",
+      "title": "Central African Republic",
+      "description": "236",
+      "enabled": true
+    },
+    {
+      "code": "TD",
+      "title": "Chad",
+      "description": "235",
+      "enabled": true
+    },
+    {
+      "code": "CL",
+      "title": "Chile",
+      "description": "56",
+      "enabled": true
+    },
+    {
+      "code": "CN",
+      "title": "China",
+      "description": "86",
+      "enabled": true
+    },
+    {
+      "code": "CO",
+      "title": "Colombia",
+      "description": "57",
+      "enabled": true
+    },
+    {
+      "code": "KM",
+      "title": "Comoros",
+      "description": "269",
+      "enabled": true
+    },
+    {
+      "code": "CK",
+      "title": "Cook Islands",
+      "description": "682",
+      "enabled": true
+    },
+    {
+      "code": "CR",
+      "title": "Costa Rica",
+      "description": "506",
+      "enabled": true
+    },
+    {
+      "code": "CI",
+      "title": "Côte d'Ivoire",
+      "description": "225",
+      "enabled": true
+    },
+    {
+      "code": "HR",
+      "title": "Croatia",
+      "description": "385",
+      "enabled": true
+    },
+    {
+      "code": "CU",
+      "title": "Cuba",
+      "description": "53",
+      "enabled": true
+    },
+    {
+      "code": "CW",
+      "title": "Curaçao",
+      "description": "599",
+      "enabled": true
+    },
+    {
+      "code": "CY",
+      "title": "Cyprus",
+      "description": "357",
+      "enabled": true
+    },
+    {
+      "code": "CZ",
+      "title": "Czech Republic",
+      "description": "420",
+      "enabled": true
+    },
+    {
+      "code": "CD",
+      "title": "Democratic Republic of the Congo",
+      "description": "243",
+      "enabled": true
+    },
+    {
+      "code": "DK",
+      "title": "Denmark",
+      "description": "45",
+      "enabled": true
+    },
+    {
+      "code": "DJ",
+      "title": "Djibouti",
+      "description": "253",
+      "enabled": true
+    },
+    {
+      "code": "DM",
+      "title": "Dominica",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "DO",
+      "title": "Dominican Republic",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "EC",
+      "title": "Ecuador",
+      "description": "593",
+      "enabled": true
+    },
+    {
+      "code": "EG",
+      "title": "Egypt",
+      "description": "20",
+      "enabled": true
+    },
+    {
+      "code": "SV",
+      "title": "El Salvador",
+      "description": "503",
+      "enabled": true
+    },
+    {
+      "code": "GQ",
+      "title": "Equatorial Guinea",
+      "description": "240",
+      "enabled": true
+    },
+    {
+      "code": "ER",
+      "title": "Eritrea",
+      "description": "291",
+      "enabled": true
+    },
+    {
+      "code": "EE",
+      "title": "Estonia",
+      "description": "372",
+      "enabled": true
+    },
+    {
+      "code": "ET",
+      "title": "Ethiopia",
+      "description": "251",
+      "enabled": true
+    },
+    {
+      "code": "FK",
+      "title": "Falkland Islands",
+      "description": "500",
+      "enabled": true
+    },
+    {
+      "code": "FO",
+      "title": "Faroe Islands",
+      "description": "298",
+      "enabled": true
+    },
+    {
+      "code": "FM",
+      "title": "Federated States of Micronesia",
+      "description": "691",
+      "enabled": true
+    },
+    {
+      "code": "FJ",
+      "title": "Fiji",
+      "description": "679",
+      "enabled": true
+    },
+    {
+      "code": "FI",
+      "title": "Finland",
+      "description": "358",
+      "enabled": true
+    },
+    {
+      "code": "FR",
+      "title": "France",
+      "description": "33",
+      "enabled": true
+    },
+    {
+      "code": "GF",
+      "title": "French Guiana",
+      "description": "594",
+      "enabled": true
+    },
+    {
+      "code": "PF",
+      "title": "French Polynesia",
+      "description": "689",
+      "enabled": true
+    },
+    {
+      "code": "GA",
+      "title": "Gabon",
+      "description": "241",
+      "enabled": true
+    },
+    {
+      "code": "GE",
+      "title": "Georgia",
+      "description": "995",
+      "enabled": true
+    },
+    {
+      "code": "DE",
+      "title": "Germany",
+      "description": "49",
+      "enabled": true
+    },
+    {
+      "code": "GH",
+      "title": "Ghana",
+      "description": "233",
+      "enabled": true
+    },
+    {
+      "code": "GI",
+      "title": "Gibraltar",
+      "description": "350",
+      "enabled": true
+    },
+    {
+      "code": "GR",
+      "title": "Greece",
+      "description": "30",
+      "enabled": true
+    },
+    {
+      "code": "GL",
+      "title": "Greenland",
+      "description": "299",
+      "enabled": true
+    },
+    {
+      "code": "GD",
+      "title": "Grenada",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "GP",
+      "title": "Guadeloupe",
+      "description": "590",
+      "enabled": true
+    },
+    {
+      "code": "GU",
+      "title": "Guam",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "GT",
+      "title": "Guatemala",
+      "description": "502",
+      "enabled": true
+    },
+    {
+      "code": "GG",
+      "title": "Guernsey",
+      "description": "44",
+      "enabled": true
+    },
+    {
+      "code": "GN",
+      "title": "Guinea",
+      "description": "224",
+      "enabled": true
+    },
+    {
+      "code": "GW",
+      "title": "Guinea-Bissau",
+      "description": "245",
+      "enabled": true
+    },
+    {
+      "code": "GY",
+      "title": "Guyana",
+      "description": "592",
+      "enabled": true
+    },
+    {
+      "code": "HT",
+      "title": "Haiti",
+      "description": "509",
+      "enabled": true
+    },
+    {
+      "code": "HN",
+      "title": "Honduras",
+      "description": "504",
+      "enabled": true
+    },
+    {
+      "code": "HK",
+      "title": "Hong Kong",
+      "description": "852",
+      "enabled": true
+    },
+    {
+      "code": "HU",
+      "title": "Hungary",
+      "description": "36",
+      "enabled": true
+    },
+    {
+      "code": "IS",
+      "title": "Iceland",
+      "description": "354",
+      "enabled": true
+    },
+    {
+      "code": "IN",
+      "title": "India",
+      "description": "91",
+      "enabled": true
+    },
+    {
+      "code": "ID",
+      "title": "Indonesia",
+      "description": "62",
+      "enabled": true
+    },
+    {
+      "code": "IR",
+      "title": "Iran",
+      "description": "98",
+      "enabled": true
+    },
+    {
+      "code": "IQ",
+      "title": "Iraq",
+      "description": "964",
+      "enabled": true
+    },
+    {
+      "code": "IE",
+      "title": "Ireland",
+      "description": "353",
+      "enabled": true
+    },
+    {
+      "code": "IM",
+      "title": "Isle Of Man",
+      "description": "44",
+      "enabled": true
+    },
+    {
+      "code": "IL",
+      "title": "Israel",
+      "description": "972",
+      "enabled": true
+    },
+    {
+      "code": "IT",
+      "title": "Italy",
+      "description": "39",
+      "enabled": true
+    },
+    {
+      "code": "JM",
+      "title": "Jamaica",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "JP",
+      "title": "Japan",
+      "description": "81",
+      "enabled": true
+    },
+    {
+      "code": "JE",
+      "title": "Jersey",
+      "description": "44",
+      "enabled": true
+    },
+    {
+      "code": "JO",
+      "title": "Jordan",
+      "description": "962",
+      "enabled": true
+    },
+    {
+      "code": "KZ",
+      "title": "Kazakhstan",
+      "description": "7",
+      "enabled": true
+    },
+    {
+      "code": "KE",
+      "title": "Kenya",
+      "description": "254",
+      "enabled": true
+    },
+    {
+      "code": "KI",
+      "title": "Kiribati",
+      "description": "686",
+      "enabled": true
+    },
+    {
+      "code": "KW",
+      "title": "Kuwait",
+      "description": "965",
+      "enabled": true
+    },
+    {
+      "code": "KG",
+      "title": "Kyrgyzstan",
+      "description": "996",
+      "enabled": true
+    },
+    {
+      "code": "LA",
+      "title": "Laos",
+      "description": "856",
+      "enabled": true
+    },
+    {
+      "code": "LV",
+      "title": "Latvia",
+      "description": "371",
+      "enabled": true
+    },
+    {
+      "code": "LB",
+      "title": "Lebanon",
+      "description": "961",
+      "enabled": true
+    },
+    {
+      "code": "LS",
+      "title": "Lesotho",
+      "description": "266",
+      "enabled": true
+    },
+    {
+      "code": "LR",
+      "title": "Liberia",
+      "description": "231",
+      "enabled": true
+    },
+    {
+      "code": "LY",
+      "title": "Libya",
+      "description": "218",
+      "enabled": true
+    },
+    {
+      "code": "LI",
+      "title": "Liechtenstein",
+      "description": "423",
+      "enabled": true
+    },
+    {
+      "code": "LT",
+      "title": "Lithuania",
+      "description": "370",
+      "enabled": true
+    },
+    {
+      "code": "LU",
+      "title": "Luxembourg",
+      "description": "352",
+      "enabled": true
+    },
+    {
+      "code": "MO",
+      "title": "Macau",
+      "description": "853",
+      "enabled": true
+    },
+    {
+      "code": "MK",
+      "title": "Macedonia",
+      "description": "389",
+      "enabled": true
+    },
+    {
+      "code": "MG",
+      "title": "Madagascar",
+      "description": "261",
+      "enabled": true
+    },
+    {
+      "code": "MW",
+      "title": "Malawi",
+      "description": "265",
+      "enabled": true
+    },
+    {
+      "code": "MY",
+      "title": "Malaysia",
+      "description": "60",
+      "enabled": true
+    },
+    {
+      "code": "MV",
+      "title": "Maldives",
+      "description": "960",
+      "enabled": true
+    },
+    {
+      "code": "ML",
+      "title": "Mali",
+      "description": "223",
+      "enabled": true
+    },
+    {
+      "code": "MT",
+      "title": "Malta",
+      "description": "356",
+      "enabled": true
+    },
+    {
+      "code": "MH",
+      "title": "Marshall Islands",
+      "description": "692",
+      "enabled": true
+    },
+    {
+      "code": "MQ",
+      "title": "Martinique",
+      "description": "596",
+      "enabled": true
+    },
+    {
+      "code": "MR",
+      "title": "Mauritania",
+      "description": "222",
+      "enabled": true
+    },
+    {
+      "code": "MU",
+      "title": "Mauritius",
+      "description": "230",
+      "enabled": true
+    },
+    {
+      "code": "YT",
+      "title": "Mayotte",
+      "description": "262",
+      "enabled": true
+    },
+    {
+      "code": "MX",
+      "title": "Mexico",
+      "description": "52",
+      "enabled": true
+    },
+    {
+      "code": "MD",
+      "title": "Moldova",
+      "description": "373",
+      "enabled": true
+    },
+    {
+      "code": "MC",
+      "title": "Monaco",
+      "description": "377",
+      "enabled": true
+    },
+    {
+      "code": "MN",
+      "title": "Mongolia",
+      "description": "976",
+      "enabled": true
+    },
+    {
+      "code": "ME",
+      "title": "Montenegro",
+      "description": "382",
+      "enabled": true
+    },
+    {
+      "code": "MS",
+      "title": "Montserrat",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "MA",
+      "title": "Morocco",
+      "description": "212",
+      "enabled": true
+    },
+    {
+      "code": "MZ",
+      "title": "Mozambique",
+      "description": "258",
+      "enabled": true
+    },
+    {
+      "code": "MM",
+      "title": "Myanmar",
+      "description": "95",
+      "enabled": true
+    },
+    {
+      "code": "NA",
+      "title": "Namibia",
+      "description": "264",
+      "enabled": true
+    },
+    {
+      "code": "NR",
+      "title": "Nauru",
+      "description": "674",
+      "enabled": true
+    },
+    {
+      "code": "NP",
+      "title": "Nepal",
+      "description": "977",
+      "enabled": true
+    },
+    {
+      "code": "NL",
+      "title": "Netherlands",
+      "description": "31",
+      "enabled": true
+    },
+    {
+      "code": "NC",
+      "title": "New Caledonia",
+      "description": "687",
+      "enabled": true
+    },
+    {
+      "code": "NZ",
+      "title": "New Zealand",
+      "description": "64",
+      "enabled": true
+    },
+    {
+      "code": "NI",
+      "title": "Nicaragua",
+      "description": "505",
+      "enabled": true
+    },
+    {
+      "code": "NE",
+      "title": "Niger",
+      "description": "227",
+      "enabled": true
+    },
+    {
+      "code": "NG",
+      "title": "Nigeria",
+      "description": "234",
+      "enabled": true
+    },
+    {
+      "code": "NU",
+      "title": "Niue",
+      "description": "683",
+      "enabled": true
+    },
+    {
+      "code": "NF",
+      "title": "Norfolk Island",
+      "description": "672",
+      "enabled": true
+    },
+    {
+      "code": "KP",
+      "title": "North Korea",
+      "description": "850",
+      "enabled": true
+    },
+    {
+      "code": "MP",
+      "title": "Northern Mariana Islands",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "NO",
+      "title": "Norway",
+      "description": "47",
+      "enabled": true
+    },
+    {
+      "code": "OM",
+      "title": "Oman",
+      "description": "968",
+      "enabled": true
+    },
+    {
+      "code": "PK",
+      "title": "Pakistan",
+      "description": "92",
+      "enabled": true
+    },
+    {
+      "code": "PW",
+      "title": "Palau",
+      "description": "680",
+      "enabled": true
+    },
+    {
+      "code": "PS",
+      "title": "Palestine",
+      "description": "970",
+      "enabled": true
+    },
+    {
+      "code": "PA",
+      "title": "Panama",
+      "description": "507",
+      "enabled": true
+    },
+    {
+      "code": "PG",
+      "title": "Papua New Guinea",
+      "description": "675",
+      "enabled": true
+    },
+    {
+      "code": "PY",
+      "title": "Paraguay",
+      "description": "595",
+      "enabled": true
+    },
+    {
+      "code": "PE",
+      "title": "Peru",
+      "description": "51",
+      "enabled": true
+    },
+    {
+      "code": "PH",
+      "title": "Philippines",
+      "description": "63",
+      "enabled": true
+    },
+    {
+      "code": "PL",
+      "title": "Poland",
+      "description": "48",
+      "enabled": true
+    },
+    {
+      "code": "PT",
+      "title": "Portugal",
+      "description": "351",
+      "enabled": true
+    },
+    {
+      "code": "PR",
+      "title": "Puerto Rico",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "QA",
+      "title": "Qatar",
+      "description": "974",
+      "enabled": true
+    },
+    {
+      "code": "CG",
+      "title": "Republic of the Congo",
+      "description": "242",
+      "enabled": true
+    },
+    {
+      "code": "RE",
+      "title": "Réunion",
+      "description": "262",
+      "enabled": true
+    },
+    {
+      "code": "RO",
+      "title": "Romania",
+      "description": "40",
+      "enabled": true
+    },
+    {
+      "code": "RU",
+      "title": "Russia",
+      "description": "7",
+      "enabled": true
+    },
+    {
+      "code": "RW",
+      "title": "Rwanda",
+      "description": "250",
+      "enabled": true
+    },
+    {
+      "code": "SH",
+      "title": "Saint Helena",
+      "description": "290",
+      "enabled": true
+    },
+    {
+      "code": "KN",
+      "title": "Saint Kitts and Nevis",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "PM",
+      "title": "Saint Pierre and Miquelon",
+      "description": "508",
+      "enabled": true
+    },
+    {
+      "code": "VC",
+      "title": "Saint Vincent and the Grenadines",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "WS",
+      "title": "Samoa",
+      "description": "685",
+      "enabled": true
+    },
+    {
+      "code": "SM",
+      "title": "San Marino",
+      "description": "378",
+      "enabled": true
+    },
+    {
+      "code": "ST",
+      "title": "Sao Tome and Principe",
+      "description": "239",
+      "enabled": true
+    },
+    {
+      "code": "SA",
+      "title": "Saudi Arabia",
+      "description": "966",
+      "enabled": true
+    },
+    {
+      "code": "SN",
+      "title": "Senegal",
+      "description": "221",
+      "enabled": true
+    },
+    {
+      "code": "RS",
+      "title": "Serbia",
+      "description": "381",
+      "enabled": true
+    },
+    {
+      "code": "SC",
+      "title": "Seychelles",
+      "description": "248",
+      "enabled": true
+    },
+    {
+      "code": "SL",
+      "title": "Sierra Leone",
+      "description": "232",
+      "enabled": true
+    },
+    {
+      "code": "SG",
+      "title": "Singapore",
+      "description": "65",
+      "enabled": true
+    },
+    {
+      "code": "SX",
+      "title": "Sint Maarten",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "SK",
+      "title": "Slovakia",
+      "description": "421",
+      "enabled": true
+    },
+    {
+      "code": "SI",
+      "title": "Slovenia",
+      "description": "386",
+      "enabled": true
+    },
+    {
+      "code": "SB",
+      "title": "Solomon Islands",
+      "description": "677",
+      "enabled": true
+    },
+    {
+      "code": "SO",
+      "title": "Somalia",
+      "description": "252",
+      "enabled": true
+    },
+    {
+      "code": "ZA",
+      "title": "South Africa",
+      "description": "27",
+      "enabled": true
+    },
+    {
+      "code": "KR",
+      "title": "South Korea",
+      "description": "82",
+      "enabled": true
+    },
+    {
+      "code": "SS",
+      "title": "South Sudan",
+      "description": "211",
+      "enabled": true
+    },
+    {
+      "code": "ES",
+      "title": "Spain",
+      "description": "34",
+      "enabled": true
+    },
+    {
+      "code": "LK",
+      "title": "Sri Lanka",
+      "description": "94",
+      "enabled": true
+    },
+    {
+      "code": "LC",
+      "title": "St. Lucia",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "SD",
+      "title": "Sudan",
+      "description": "249",
+      "enabled": true
+    },
+    {
+      "code": "SR",
+      "title": "Suriname",
+      "description": "597",
+      "enabled": true
+    },
+    {
+      "code": "SZ",
+      "title": "Swaziland",
+      "description": "268",
+      "enabled": true
+    },
+    {
+      "code": "SE",
+      "title": "Sweden",
+      "description": "46",
+      "enabled": true
+    },
+    {
+      "code": "CH",
+      "title": "Switzerland",
+      "description": "41",
+      "enabled": true
+    },
+    {
+      "code": "SY",
+      "title": "Syria",
+      "description": "963",
+      "enabled": true
+    },
+    {
+      "code": "TW",
+      "title": "Taiwan",
+      "description": "886",
+      "enabled": true
+    },
+    {
+      "code": "TJ",
+      "title": "Tajikistan",
+      "description": "992",
+      "enabled": true
+    },
+    {
+      "code": "TZ",
+      "title": "Tanzania",
+      "description": "255",
+      "enabled": true
+    },
+    {
+      "code": "TH",
+      "title": "Thailand",
+      "description": "66",
+      "enabled": true
+    },
+    {
+      "code": "BS",
+      "title": "The Bahamas",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "GM",
+      "title": "The Gambia",
+      "description": "220",
+      "enabled": true
+    },
+    {
+      "code": "TL",
+      "title": "Timor-Leste",
+      "description": "670",
+      "enabled": true
+    },
+    {
+      "code": "TG",
+      "title": "Togo",
+      "description": "228",
+      "enabled": true
+    },
+    {
+      "code": "TK",
+      "title": "Tokelau",
+      "description": "690",
+      "enabled": true
+    },
+    {
+      "code": "TO",
+      "title": "Tonga",
+      "description": "676",
+      "enabled": true
+    },
+    {
+      "code": "TT",
+      "title": "Trinidad and Tobago",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "TN",
+      "title": "Tunisia",
+      "description": "216",
+      "enabled": true
+    },
+    {
+      "code": "TR",
+      "title": "Turkey",
+      "description": "90",
+      "enabled": true
+    },
+    {
+      "code": "TM",
+      "title": "Turkmenistan",
+      "description": "993",
+      "enabled": true
+    },
+    {
+      "code": "TC",
+      "title": "Turks and Caicos Islands",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "TV",
+      "title": "Tuvalu",
+      "description": "688",
+      "enabled": true
+    },
+    {
+      "code": "UG",
+      "title": "Uganda",
+      "description": "256",
+      "enabled": true
+    },
+    {
+      "code": "UA",
+      "title": "Ukraine",
+      "description": "380",
+      "enabled": true
+    },
+    {
+      "code": "AE",
+      "title": "United Arab Emirates",
+      "description": "971",
+      "enabled": true
+    },
+    {
+      "code": "GB",
+      "title": "United Kingdom",
+      "description": "44",
+      "enabled": true
+    },
+    {
+      "code": "US",
+      "title": "United States",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "UY",
+      "title": "Uruguay",
+      "description": "598",
+      "enabled": true
+    },
+    {
+      "code": "VI",
+      "title": "US Virgin Islands",
+      "description": "1",
+      "enabled": true
+    },
+    {
+      "code": "UZ",
+      "title": "Uzbekistan",
+      "description": "998",
+      "enabled": true
+    },
+    {
+      "code": "VU",
+      "title": "Vanuatu",
+      "description": "678",
+      "enabled": true
+    },
+    {
+      "code": "VE",
+      "title": "Venezuela",
+      "description": "58",
+      "enabled": true
+    },
+    {
+      "code": "VN",
+      "title": "Vietnam",
+      "description": "84",
+      "enabled": true
+    },
+    {
+      "code": "WF",
+      "title": "Wallis and Futuna",
+      "description": "681",
+      "enabled": true
+    },
+    {
+      "code": "EH",
+      "title": "Western Sahara",
+      "description": "212",
+      "enabled": true
+    },
+    {
+      "code": "YE",
+      "title": "Yemen",
+      "description": "967",
+      "enabled": true
+    },
+    {
+      "code": "ZM",
+      "title": "Zambia",
+      "description": "260",
+      "enabled": true
+    }
+  ],
+  "CurrencyType": [
+    {
+      "code": "USD",
+      "title": "$",
+      "description": "United States Dollar",
+      "enabled": true
+    },
+    {
+      "code": "EUR",
+      "title": "€",
+      "description": "Euro",
+      "enabled": true
+    },
+    {
+      "code": "JPY",
+      "title": "¥",
+      "description": "Japanese yen",
+      "enabled": true
+    },
+    {
+      "code": "GBP",
+      "title": "£",
+      "description": "Pound sterling",
+      "enabled": true
+    },
+    {
+      "code": "AUD",
+      "title": "A$",
+      "description": "Australian Dollar",
+      "enabled": true
+    },
+    {
+      "code": "CAD",
+      "title": "C$",
+      "description": "Canadian Dollar",
+      "enabled": true
+    },
+    {
+      "code": "CHF",
+      "title": "Fr",
+      "description": "Swiss franc",
+      "enabled": true
+    },
+    {
+      "code": "CNY",
+      "title": "元",
+      "description": "Renminbi",
+      "enabled": true
+    },
+    {
+      "code": "SEK",
+      "title": "kr",
+      "description": "Swedish krona",
+      "enabled": true
+    },
+    {
+      "code": "NZD",
+      "title": "NZ$",
+      "description": "New Zealand Dollar",
+      "enabled": true
+    },
+    {
+      "code": "MXN",
+      "title": "$",
+      "description": "Mexican peso",
+      "enabled": true
+    },
+    {
+      "code": "SGD",
+      "title": "S$",
+      "description": "Singapore Dollar",
+      "enabled": true
+    },
+    {
+      "code": "HKD",
+      "title": "HK$",
+      "description": "Hong Kong Dollar",
+      "enabled": true
+    },
+    {
+      "code": "NOK",
+      "title": "kr",
+      "description": "Norwegian krone",
+      "enabled": true
+    },
+    {
+      "code": "KRW",
+      "title": "₩",
+      "description": "South Korean won",
+      "enabled": true
+    },
+    {
+      "code": "TRY",
+      "title": "₺",
+      "description": "Turkish lira",
+      "enabled": true
+    },
+    {
+      "code": "RUB",
+      "title": "₽",
+      "description": "Russian ruble",
+      "enabled": true
+    },
+    {
+      "code": "INR",
+      "title": "₹",
+      "description": "Indian rupee",
+      "enabled": true
+    },
+    {
+      "code": "BRL",
+      "title": "R$",
+      "description": "Brazilian real",
+      "enabled": true
+    },
+    {
+      "code": "ZAR",
+      "title": "R",
+      "description": "South African rand",
+      "enabled": true
+    },
+    {
+      "code": "MYR",
+      "title": "RM",
+      "description": "Malaysian Ringgit",
+      "enabled": true
+    }
+  ],
+  "Frequent": [
+    {
+      "code": "TEN_MINUTE",
+      "title": "Ten Minute",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "HOURLY",
+      "title": "Hourly",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "DAILY",
+      "title": "Daily",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "WEEKLY",
+      "title": "Weekly",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "MONTHLY",
+      "title": "Monthly",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "QUARTERLY",
+      "title": "Quarterly",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "YEARLY",
+      "title": "Yearly",
+      "description": "",
+      "enabled": false
+    }
+  ],
+  "RangeType": [
+    {
+      "code": "CUSTOM_RANGE",
+      "title": "Custom Range",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "WEEKLY",
+      "title": "Weekly",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "MONTHLY",
+      "title": "Monthly",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "YEARLY",
+      "title": "Yearly",
+      "description": "",
+      "enabled": false
+    }
+  ],
+  "OnBoardingFeature": [
+    {
+      "code": "ACTION_BAR",
+      "title": "Action Bar",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOLING_TAB",
+      "title": "Tooling Tab",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "NUMBER_OF_PART",
+      "title": "Number Of Part",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SHOW_WARNING_DELETE_TAB",
+      "title": "Show Warning Delete Tab",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "VERSION_HISTORY",
+      "title": "Version history",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_TABLE_TAB",
+      "title": "Data table tab",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SHOW_WARNING_DELETE_NOTE",
+      "title": "Show Warning Delete Note",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_REQUEST_INVALID_CHECK",
+      "title": "Data request invalid check",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "FrequentUsage": [
+    {
+      "code": "ALL",
+      "title": "All Rates",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "FREQUENTLY",
+      "title": "Frequently",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "OCCASIONALLY",
+      "title": "Occasionally",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "RARELY",
+      "title": "Rarely",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "NEVER",
+      "title": "Never",
+      "description": "",
+      "enabled": false
+    }
+  ],
+  "DayShiftType": [
+    {
+      "code": "DEFAULT",
+      "title": "Default",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MONDAY",
+      "title": "Monday",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TUESDAY",
+      "title": "Tuesday",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WEDNESDAY",
+      "title": "Wednesday",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "THURSDAY",
+      "title": "Thursday",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "FRIDAY",
+      "title": "Friday",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SATURDAY",
+      "title": "Saturday",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SUNDAY",
+      "title": "Sunday",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "MessageType": [
+    {
+      "code": "EMAIL",
+      "title": "Email",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SMS",
+      "title": "SMS",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MMS",
+      "title": "MMS",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "MatchStatus": [
+    {
+      "code": null,
+      "title": null,
+      "description": null,
+      "enabled": null
+    },
+    {
+      "code": null,
+      "title": null,
+      "description": null,
+      "enabled": null
+    }
+  ],
+  "ObjectType": [
+    {
+      "code": "COUNTER",
+      "title": "Counter",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "PART",
+      "title": "Part",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TERMINAL",
+      "title": "Terminal",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOLING",
+      "title": "Tooling",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "USER",
+      "title": "User",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "ACCESS_FEATURE",
+      "title": "Access Feature",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "ACCESS_GROUP",
+      "title": "Access Group",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CATEGORY",
+      "title": "Category",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COMPANY",
+      "title": "Company",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "LOCATION",
+      "title": "Location",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MACHINE",
+      "title": "Machine",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "DataRangeType": [
+    {
+      "code": "BELOW",
+      "title": "Below",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WITHIN",
+      "title": "Within",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "ABOVE",
+      "title": "Above",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "WUTType": [
+    {
+      "code": "WARM_UP_TIME",
+      "title": "Warm-up time",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "NORMAL_TIME",
+      "title": "Normal time",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "ABNORMAL_TIME",
+      "title": "Abnormal time",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COOL_DOWN_TIME",
+      "title": "Cool down time",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DOWN_TIME",
+      "title": "Down time",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CHANGE_IN_NORMAL_TIME",
+      "title": "Change in normal time",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "NotificationType": [
+    {
+      "code": "SYSTEM_NOTE",
+      "title": "System Note",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "INVITE_USER",
+      "title": "Invite User",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER",
+      "title": "Work Order",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_COMPLETE_REQUEST_APPROVAL",
+      "title": "Work Order Complete Request Approval",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_APPROVAL_APPROVED",
+      "title": "Work Order Approval Approved",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_APPROVAL_REJECTED",
+      "title": "Work Order Approval Rejected",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_APPROVAL_CANCELLED",
+      "title": "Work Order Approval Cancelled",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_CM_REQUEST_APPROVAL",
+      "title": "Work Order CM Request Approval",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_CM_REQUEST_APPROVAL_APPROVED",
+      "title": "Work Order CM Request Approval Approved",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_CM_REQUEST_APPROVAL_DECLINED",
+      "title": "Work Order CM Request Approval Declined",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_REQUEST_CHANGE",
+      "title": "Work Order Request Change",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_COMPLETION",
+      "title": "Data Completion",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_DECLINED",
+      "title": "Work Order Declined",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_APPROVED_CHANGE",
+      "title": "Work Order Approved",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_REJECTED_CHANGE",
+      "title": "Work Order Rejected",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_CANCELLED",
+      "title": "Work Order Cancelled",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_REQUEST_ASSIGN",
+      "title": "Data request assign",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_COMPLETION_ASSIGN",
+      "title": "Data completion assign",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_REQUEST_3DAY_BEFORE_DUE_DATE",
+      "title": "3 days before the deadline",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_REQUEST_OVERDUE_REQUESTEE",
+      "title": "data request overdue",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_REQUEST_CANCEL",
+      "title": "data request cancel",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_COMPLETION_CANCEL",
+      "title": "data completion cancel",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_REQUEST_DECLINE",
+      "title": "data request decline",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_REQUEST_COMPLETED",
+      "title": "data request complete",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_REQUEST_OVERDUE_REQUESTER",
+      "title": "data request overdue requester",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_REQUEST_REOPEN",
+      "title": "data request reopen",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_COMPLETION_REOPEN",
+      "title": "data completion reopen",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "EndOfLifeCycleStatus": [
+    {
+      "code": "DISMISS",
+      "title": "Dismissed",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "IN_COMMUNICATION",
+      "title": "In Communication",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "RESOLVE",
+      "title": "Resolved",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "NULL",
+      "title": null,
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "BatteryStatus": [
+    {
+      "code": "HIGH",
+      "title": "High",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "LOW",
+      "title": "Low",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "EMPTY",
+      "title": "Empty",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "PeriodType": [
+    {
+      "code": "THIS_MONTH",
+      "title": "This month",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "RECENT_MONTH",
+      "title": "Recent 1 month",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "THIS_YEAR",
+      "title": "This year",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "RECENT_YEAR",
+      "title": "Recent 1 year",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "DAILY",
+      "title": "Daily",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "WEEKLY",
+      "title": "Weekly",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "MONTHLY",
+      "title": "Monthly",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "REAL_TIME",
+      "title": "Real Time",
+      "description": "",
+      "enabled": false
+    }
+  ],
+  "IpType": [
+    {
+      "code": "DYNAMIC",
+      "title": "Dynamic",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "STATIC",
+      "title": "Static",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "DashboardGroupType": [
+    {
+      "code": "ASSET_MANAGEMENT_DASHBOARD",
+      "title": "Asset Management Dashboard",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SUPPLIER_PERFORMANCE_MANAGEMENT_DASHBOARD",
+      "title": "Supplier Performance Management Dashboard",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "INDIVIDUAL_DASHBOARDS",
+      "title": "Individual Dashboards",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "ReportType": [
+    {
+      "code": "CAPACITY_UTILIZATION",
+      "title": "Capacity Utilization",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "OEE",
+      "title": "Overall Equipment Effectiveness",
+      "description": "",
+      "enabled": false
+    }
+  ],
+  "GraphItemType": [
+    {
+      "code": "APPROVED_CYCLE_TIME",
+      "title": "Approved CT",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CYCLE_TIME",
+      "title": "Cycle Time",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MAX_CYCLE_TIME",
+      "title": "Max CT",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MIN_CYCLE_TIME",
+      "title": "Min CT",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "QUANTITY",
+      "title": "Shot",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "UPTIME",
+      "title": "Uptime (Within, L1, L2)",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "UPTIME_TARGET",
+      "title": "Uptime Target",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MAXIMUM_CAPACITY",
+      "title": "Maximum Capacity",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "MaintenanceType": [
+    {
+      "code": null,
+      "title": null,
+      "description": null,
+      "enabled": null
+    },
+    {
+      "code": null,
+      "title": null,
+      "description": null,
+      "enabled": null
+    }
+  ],
+  "BatchStatus": [
+    {
+      "code": "PENDING",
+      "title": "Pending",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "IN_PROGRESS",
+      "title": "In Progress",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COMPLETED",
+      "title": "Completed",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "DateViewType": [
+    {
+      "code": "HOUR",
+      "title": "Hour",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DAY",
+      "title": "Day",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WEEK",
+      "title": "Week",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MONTH",
+      "title": "Month",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "YEAR",
+      "title": "Year",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "LAST7DAYS",
+      "title": "Last 7 days",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "LAST30DAYS",
+      "title": "Last 30 days",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CUSTOM_RANGE",
+      "title": "Custom Range",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "EVERY_SHOT",
+      "title": "Every Shot",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "NotificationStatus": [
+    {
+      "code": "ALERT",
+      "title": "Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CONFIRMED",
+      "title": "Confirmed",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "FIXED",
+      "title": "Fixed",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "PENDING",
+      "title": "Pending",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "APPROVED",
+      "title": "Approved",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DISAPPROVED",
+      "title": "Disapproved",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "ReviewWorkOrderAction": [
+    {
+      "code": "APPROVED",
+      "title": "Approved",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "REJECTED",
+      "title": "Rejected",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CANCELLED",
+      "title": "Cancelled",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "CompareType": [
+    {
+      "code": "TOOL",
+      "title": "Compare by tooling",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SUPPLIER",
+      "title": "Compare by supplier",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOLMAKER",
+      "title": "Compare by toolmaker",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "TemperatureUnit": [
+    {
+      "code": "CELSIUS",
+      "title": "°C",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "FAHRENHEIT",
+      "title": "°F",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "PresetStatus": [
+    {
+      "code": "READY",
+      "title": "적용대기",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CANCELED",
+      "title": "취소됨",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "APPLIED",
+      "title": "적용완료",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "WorkOrderType": [
+    {
+      "code": "GENERAL",
+      "title": "General",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "INSPECTION",
+      "title": "Inspection",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "EMERGENCY",
+      "title": "Emergency",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "PREVENTATIVE_MAINTENANCE",
+      "title": "Preventative Maintenance",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CORRECTIVE_MAINTENANCE",
+      "title": "Corrective Maintenance",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "REFURBISHMENT",
+      "title": "Refurbishment",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DISPOSAL",
+      "title": "Disposal",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "CustomerSupportStatus": [
+    {
+      "code": "ALL",
+      "title": "All",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "NEW",
+      "title": "New",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "IN_PROGRESS",
+      "title": "In Progress",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "RESOLVED",
+      "title": "Resolved",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "CustomFieldType": [
+    {
+      "code": "DROPDOWN",
+      "title": "Dropdown",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TEXT_BOX",
+      "title": "Text box",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "NUMBER",
+      "title": "Number",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATE",
+      "title": "Date",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CHECK_BOXES",
+      "title": "Check box",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TEXT",
+      "title": "Text",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "EquipmentStatus": [
+    {
+      "code": "DISCARDED",
+      "title": "Discarded",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "INSTALLED",
+      "title": "Installed",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "FAILURE",
+      "title": "Failure",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "AVAILABLE",
+      "title": "Available",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DETACHED",
+      "title": "Detached",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "ToolingCondition": [
+    {
+      "code": "GOOD",
+      "title": "Good",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "FAIR",
+      "title": "Fair",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "POOR",
+      "title": "Poor",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "WeightUnit": [
+    {
+      "code": "OUNCES",
+      "title": "ounce",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "POUNDS",
+      "title": "pound",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "GRAMS",
+      "title": "gram",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "KILOGRAMS",
+      "title": "kilogram",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "RunnerType": [
+    {
+      "code": "HOT",
+      "title": "Direct Hot Runner",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SEMI_HOT",
+      "title": "Semi Hot Runner",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COLD",
+      "title": "Cold Runner",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "OutsideUnit": [
+    {
+      "code": "PERCENTAGE",
+      "title": "%",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SECOND",
+      "title": "s",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "RevisionObjectType": [
+    {
+      "code": "USER",
+      "title": "User",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "ROLE",
+      "title": "Role",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "COMPANY",
+      "title": "Company",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "LOCATION",
+      "title": "Location",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "CATEGORY",
+      "title": "Category",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "PART",
+      "title": "Part",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "TERMINAL",
+      "title": "Terminal",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "MOLD",
+      "title": "Mold",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "COUNTER",
+      "title": "Counter",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "MACHINE",
+      "title": "Machine",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "PICK_LIST",
+      "title": "Picklist",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "CHECKLIST_MAINTENANCE",
+      "title": "Checklist maintenance",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "CHECKLIST_REJECT_RATE",
+      "title": "Checklist reject rate",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "CHECKLIST_GENERAL",
+      "title": "Checklist general",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "CHECKLIST_REFURBISHMENT",
+      "title": "Checklist maintenance",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "CHECKLIST_DISPOSAL",
+      "title": "Checklist disposal",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "CHECKLIST_QUALITY_ASSURANCE",
+      "title": "Checklist quality assurance",
+      "description": "",
+      "enabled": false
+    }
+  ],
+  "MachineDowntimeAlertStatus": [
+    {
+      "code": "DOWNTIME",
+      "title": "Downtime",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "REGISTERED",
+      "title": "Registered",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "UNCONFIRMED",
+      "title": "Unconfirmed",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CONFIRMED",
+      "title": "Confirmed",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "ContinentName": [
+    {
+      "code": "ASIA",
+      "title": "Asia",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "EMEA",
+      "title": "EMEA",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SOUTH_AMERICA",
+      "title": "South America",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "NORTH_AMERICA",
+      "title": "North America",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "OCEANIA",
+      "title": "Oceania",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "Language": [
+    {
+      "code": "EN",
+      "title": "English",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DE",
+      "title": "German",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "ZH",
+      "title": "Chinese",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "PT",
+      "title": "Portuguese",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "FR",
+      "title": "French",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "IT",
+      "title": "Italian",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "ES",
+      "title": "Spanish",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "JA",
+      "title": "Japanese",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TR",
+      "title": "Turkish",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "DowntimeStatus": [
+    {
+      "code": "DOWNTIME",
+      "title": "Downtime",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CONFIRMED",
+      "title": "Confirmed",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "DataRequestStatus": [
+    {
+      "code": "ACCEPTED",
+      "title": "Accepted",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "REQUESTED",
+      "title": "Requested",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DECLINED",
+      "title": "Declined",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CANCELLED",
+      "title": "Cancelled",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COMPLETED",
+      "title": "Completed",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "MoldLocationStatus": [
+    {
+      "code": "CHANGED",
+      "title": "위치변경",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CONFIRMED",
+      "title": "확인완료",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "SpecialAlertType": [
+    {
+      "code": "L2",
+      "title": "L2",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "L1L2",
+      "title": "L1+L2",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "OVERDUE",
+      "title": "Overdue",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "UPCOMING",
+      "title": "Upcoming",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "UPCOMING_OVERDUE",
+      "title": "Upcoming + Overdue",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MEDIUM_HIGH",
+      "title": "Medium + High",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "HIGH",
+      "title": "High",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "CycleTimeStatus": [
+    {
+      "code": "WITHIN_TOLERANCE",
+      "title": "Within Tolerance",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "OUTSIDE_L1",
+      "title": "Outside L1",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "OUTSIDE_L2",
+      "title": "Outside L2",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "CorrectiveAction": [
+    {
+      "code": "REQUEST",
+      "title": "Request",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "APPROVE",
+      "title": "Approve",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DISAPPROVE",
+      "title": "Disapprove",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COMPLETE",
+      "title": "Complete",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "MaintenanceStatus": [
+    {
+      "code": "UPCOMING",
+      "title": "Upcoming",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "OVERDUE",
+      "title": "Overdue",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SENT",
+      "title": "Sent",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DONE",
+      "title": "Done",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "RefurbishmentStatus": [
+    {
+      "code": "END_OF_LIFECYCLE",
+      "title": "End of lifecycle",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MEDIUM_HIGH",
+      "title": "Medium + High",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "REQUESTED",
+      "title": "Requested",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DISCARDED",
+      "title": "Discarded",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COMPLETED",
+      "title": "Completed",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "APPROVED",
+      "title": "Approved",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DISAPPROVED",
+      "title": "Disapproved",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "REPAIRED",
+      "title": "Repaired",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "OperatingStatus": [
+    {
+      "code": "WORKING",
+      "title": "Active",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "IDLE",
+      "title": "Idle",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "NOT_WORKING",
+      "title": "Inactive",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DISCONNECTED",
+      "title": "Disconnected",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "TopicType": [
+    {
+      "code": "HELP_CENTER",
+      "title": "Help center",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "END_lIFE_CYCLE",
+      "title": "End life cycle",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "RoleUserData": [
+    {
+      "code": "ROLE_WEB_USER",
+      "title": "ROLE_WEB_USER",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "ROLE_REST_USER",
+      "title": "ROLE_REST_USER",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "CorrectiveStatus": [
+    {
+      "code": "FAILURE",
+      "title": "Failure",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "REQUESTED",
+      "title": "Requested",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COMPLETED",
+      "title": "Completed",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "APPROVED",
+      "title": "Approved",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DISAPPROVED",
+      "title": "Disapproved",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "REPAIRED",
+      "title": "Repaired",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "SizeUnit": [
+    {
+      "code": "INCH",
+      "title": "inch",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "FOOT",
+      "title": "foot",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "YARD",
+      "title": "yard",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MM",
+      "title": "mm",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CM",
+      "title": "cm",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "M",
+      "title": "m",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "EfficiencyStatus": [
+    {
+      "code": "WITHIN_TOLERANCE",
+      "title": "Within Tolerance",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "OUTSIDE_L1",
+      "title": "Outside L1",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "OUTSIDE_L2",
+      "title": "Outside L2",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "RoleUserTopic": [
+    {
+      "code": "OWNER",
+      "title": "owner",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "NORMAL",
+      "title": "normal",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "HOST",
+      "title": "host",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "HOST_OWNER",
+      "title": "host owner",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "PageType": [
+    {
+      "code": "TOOLING_DASHBOARD",
+      "title": "Tooling",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "PART_DASHBOARD",
+      "title": "Part",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "PART_SETTING",
+      "title": "Part (Settings)",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOLING_SETTING",
+      "title": "Tooling (Settings)",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TERMINAL_SETTING",
+      "title": "Terminal",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COUNTER_SETTING",
+      "title": "Counter",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "RELOCATION_ALERT",
+      "title": "Relocation Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOLING_DISCONNECTION_ALERT",
+      "title": "Tooling Disconnection Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TERMINAL_DISCONNECTION_ALERT",
+      "title": "Terminal Disconnection Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CYCLE_TIME_ALERT",
+      "title": "Cycle Time Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DOWNTIME_ALERT",
+      "title": "Downtime Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_APPROVAL_ALERT",
+      "title": "Data Approval Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CHECKLIST_MAINTENANCE",
+      "title": "Checklist maintenance",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CHECKLIST_REJECT_RATE",
+      "title": "Checklist Reject Rate",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CHECKLIST_GENERAL",
+      "title": "Checklist General",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CHECKLIST_REFURBISHMENT",
+      "title": "Checklist Refurbishment",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CHECKLIST_DISPOSAL",
+      "title": "Checklist Disposal",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CHECKLIST_QUALITY_ASSURANCE",
+      "title": "Checklist Quality Assurance",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MAINTENANCE_ALERT",
+      "title": "Maintenance Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CORRECTIVE_MAINTENANCE_ALERT",
+      "title": "Corrective Maintenance Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MACHINE_SETTING",
+      "title": "Machine",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CATEGORY_SETTING",
+      "title": "Category",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COMPANY_SETTING",
+      "title": "Company",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MACHINE_DOWNTIME_ALERT",
+      "title": "Machine Downtime Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "OEE_PART_PRODUCED",
+      "title": "OEE Part Produced",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DETACHMENT_ALERT",
+      "title": "Detachment Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "EFFICIENCY_ALERT",
+      "title": "Efficiency Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "REJECT_RATE",
+      "title": "Reject Rate",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CYCLE_TIME_DEV",
+      "title": "Cycle Time Deviation",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CYCLE_TIME_FLUCTUATION",
+      "title": "Cycle Time Fluctuation",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "ACCESS_GROUP",
+      "title": "Access Group",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_SUBMISSION_ALERT",
+      "title": "Data Submission Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DISCONNECTION_ALERT",
+      "title": "Disconnection Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "LOCATION",
+      "title": "Location",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "REFURBISHMENT_ALERT",
+      "title": "Refurbishment Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "RESET",
+      "title": "Reset",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "RESET_ALERT",
+      "title": "Reset Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "UPTIME_ALERT",
+      "title": "Uptime Alert",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "USER",
+      "title": "User",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SUPPORT_CENTER",
+      "title": "Support Center",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "END_OF_LIFE_CYCLE",
+      "title": "End of Life Cycle",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CAPACITY_UTILIZATION_REPORT",
+      "title": "Capacity Utilization Report",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CYCLE_TIME_REPORT",
+      "title": "Cycle Time Report",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "PRODUCTION_EFFICIENCY_REPORT",
+      "title": "Production Efficiency Report",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CYCLE_TIME_ALERT_HISTORY",
+      "title": "Cycle Time Alert History",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "EFFICIENCY_ALERT_OUT_SIDE",
+      "title": "Efficiency Alert Out Side",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MISCONFIGURED",
+      "title": "misconfigured",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER",
+      "title": "Work Order",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "AlertType": [
+    {
+      "code": "RELOCATION",
+      "title": "Relocation",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DISCONNECTED",
+      "title": "Disconnected",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CYCLE_TIME",
+      "title": "Cycle Time",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MAINTENANCE",
+      "title": "Preventive Maintenance",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CORRECTIVE_MAINTENANCE",
+      "title": "Corrective Maintenance",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "EFFICIENCY",
+      "title": "Efficiency",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MISCONFIGURE",
+      "title": "Misconfigure",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_SUBMISSION",
+      "title": "Data Submission",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DOWNTIME_MACHINE",
+      "title": "Downtime Machine",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TERMINAL_DISCONNECTED",
+      "title": "Disconnected",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COUNTER_MISWORKING",
+      "title": "Counter Misworking",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOL_MISWORKING",
+      "title": "Tool Misworking",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "REFURBISHMENT",
+      "title": "Refurbishment",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DETACHMENT",
+      "title": "Detachment",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DOWNTIME",
+      "title": "Downtime",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "MoldStatus": [
+    {
+      "code": "IN_PRODUCTION",
+      "title": "In Production",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "IDLE",
+      "title": "Idle",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "NOT_WORKING",
+      "title": "Inactive",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SENSOR_OFFLINE",
+      "title": "Sensor Offline",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SENSOR_DETACHED",
+      "title": "Sensor Detached",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "NO_SENSOR",
+      "title": "No Sensor",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "ON_STANDBY",
+      "title": "On Standby",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "MachineAvailabilityType": [
+    {
+      "code": "DAILY_WORKING_HOUR",
+      "title": "Daily working hour",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "PLANNED_DOWNTIME",
+      "title": "Planned downtime",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "UNPLANNED_DOWNTIME",
+      "title": "Unplanned downtime",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "WorkOrderStatus": [
+    {
+      "code": "ACCEPTED",
+      "title": "Accepted",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "REQUESTED",
+      "title": "Requested",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DECLINED",
+      "title": "Declined",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CANCELLED",
+      "title": "Cancelled",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COMPLETED",
+      "title": "Completed",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "PENDING_APPROVAL",
+      "title": "Pending Approval",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "REQUESTED_NOT_FINISHED",
+      "title": "Requested Not Finished",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CM_APPROVAL_REQUESTED",
+      "title": "CM Approval Requested",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "MaintenanceTimeStatus": [
+    {
+      "code": null,
+      "title": null,
+      "description": null,
+      "enabled": null
+    },
+    {
+      "code": null,
+      "title": null,
+      "description": null,
+      "enabled": null
+    }
+  ],
+  "MisconfigureStatus": [
+    {
+      "code": "MISCONFIGURED",
+      "title": "Misconfigured",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CONFIRMED",
+      "title": "Confirmed",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CANCELED",
+      "title": "Canceled",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "GraphType": [
+    {
+      "code": "QUICK_STATS",
+      "title": "Quick Fact",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DISTRIBUTION",
+      "title": "Tooling Distribution",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "HIERARCHY",
+      "title": "Project Hierarchy",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CYCLE_TIME_STATUS",
+      "title": "Cycle Time Status",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CAPACITY",
+      "title": "Capacity Utilization",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "TOOLING",
+      "title": "Tooling Status",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DOWNTIME",
+      "title": "Downtime",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "OEE",
+      "title": "Overall Equipment Effectiveness",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "OTE",
+      "title": "Overall Tooling Effectiveness",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MAINTENANCE_STATUS",
+      "title": "Preventive Maintenance",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "PRODUCTION_RATE",
+      "title": "Production Quantity",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "UTILIZATION_RATE",
+      "title": "Utilization Rate",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "UPTIME_STATUS",
+      "title": "Uptime Status",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MAXIMUM_CAPACITY",
+      "title": "Production Capacity",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "IMPLEMENTATION_STATUS",
+      "title": "Implementation Status",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "CYCLE_TIME",
+      "title": "Cycle Time",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "ON_TIME_DELIVERY",
+      "title": "On-Time Delivery",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "PRODUCTION_PATTERN_ANALYSIS",
+      "title": "Production Pattern Analysis",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "ACTUAL_TARGET_UPTIME_RATIO",
+      "title": "Tooling Uptime Ratio",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_COMPLETION_RATE",
+      "title": "Date Completion Rate",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "code": "INACTIVE_TOOLINGS",
+      "title": "Inactive Toolings",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "POA",
+      "title": "Purchase Order Assessment",
+      "description": "",
+      "enabled": false
+    }
+  ],
+  "RejectedRateStatus": [
+    {
+      "code": "UNCOMPLETED",
+      "title": "Uncompleted",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COMPLETED",
+      "title": "Completed",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "RoleType": [
+    {
+      "code": "ROLE",
+      "title": "일반",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "ROLE_MENU",
+      "title": "Access Feature",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "ROLE_GROUP",
+      "title": "Access Group",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "ROLE_CONTROL",
+      "title": "Access Control",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "StorageType": [
+    {
+      "code": "MOLD",
+      "title": "Mold install photo",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MOLD_MAINTENANCE_DOCUMENT",
+      "title": "Mold Maintenance Document ",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MOLD_PO_DOCUMENT",
+      "title": "Mold PO Document ",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MOLD_PICTURE",
+      "title": "Tooling Picture",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MOLD_INSTRUCTION_VIDEO",
+      "title": "Instruction Video",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MOLD_CONDITION",
+      "title": "Tooling Condition",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MOLD_MAINTENANCE",
+      "title": "Mold Maintenance",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MOLD_COUNTER",
+      "title": "Mold and Counter install photo",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MOLD_CORRECTIVE",
+      "title": "Mold corrective photo",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TERMINAL",
+      "title": "Terminal installation photo",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "CORRESPONDENCE",
+      "title": "Correspondence Document",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MOLD_REFURBISHMENT",
+      "title": "Refurbishment Document",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "PART_PICTURE",
+      "title": "Part Picture",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "MACHINE_PICTURE",
+      "title": "Machine Picture",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_FILE",
+      "title": "Work Order File",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_POW_FILE",
+      "title": "Work Order Proof Of Work File",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_COST_FILE",
+      "title": "Work Order Cost File",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "WORK_ORDER_CHECKLIST_FILE",
+      "title": "Work Order Checklist File",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "PROJECT_IMAGE",
+      "title": "Project Image",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "IMPORT_FILE",
+      "title": "Import File",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "COMPANY_PICTURE",
+      "title": "Company Picture",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "LOCATION_PICTURE",
+      "title": "Location Picture",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "DATA_REQUEST_FILE",
+      "title": "Data request file",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "DowntimeType": [
+    {
+      "code": "MAINTENANCE",
+      "title": "Maintenance",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "BREAKDOWN",
+      "title": "Breakdown",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "OTHER",
+      "title": "Other",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "PropertyGroup": [
+    {
+      "code": "TOOLING_BASIC",
+      "title": "Basic Information (Static)",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOLING_PHYSICAL",
+      "title": "Physical Information",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOLING_RUNNER_SYSTEM",
+      "title": "Runner System Information",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOLING_COST",
+      "title": "Cost Information",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SL_DEPRECIATION",
+      "title": "Straight Line (S.L.) Depreciation",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "UP_DEPRECIATION",
+      "title": "Units of Production (U.P.) Depreciation",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOLING_SUPPLIER",
+      "title": "Supplier Information",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOLING_PRODUCTION",
+      "title": "Production Information",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOLING_MAINTENANCE",
+      "title": "Maintenance Information",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOLING_REFURBISHMENT",
+      "title": "Refurbishment Information",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOLING_WORK_ORDER",
+      "title": "Work Order Information",
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "CompanyType": [
+    {
+      "code": "IN_HOUSE",
+      "title": "In-house",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "SUPPLIER",
+      "title": "Supplier",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "code": "TOOL_MAKER",
+      "title": "Toolmaker",
+      "description": "",
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+$background_color: #fff;
+
+@mixin dimension($width, $height) {
+  width: $width;
+  height: $height;
+  display: flex;
+  align-items: center;
+}
+
+#slider {
+  @include dimension(100%, 3.31rem);
+  overflow: hidden;
+  margin: 0.38rem 0;
+  position: relative;
+  .slides_group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .fade_enter_active {
+      transition: opacity 1s;
+    }
+    .fade_enter {
+      opacity: 0;
+    }
+
+    /* GO TO NEXT SLIDE */
+    .slide_next_enter_active,
+    .slide_next_leave_active {
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide_next_enter {
+      transform: translate(100%);
+    }
+    .slide_next_leave_to {
+      transform: translate(-100%);
+    }
+    /* GO TO PREVIOUS SLIDE */
+    .slide_prev_enter_active,
+    .slide_prev_leave_active {
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide_prev_enter {
+      transform: translate(-100%);
+    }
+    .slide_prev_leave_to {
+      transform: translate(100%);
+    }
+    .slide {
+      @include dimension(80%, 100%);
+      position: absolute;
+      top: 0.13rem;
+      justify-content: center;
+      .slider_body {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        height: 100%;
+        gap: 0.23rem;
+        margin: 0;
+        .slider_content {
+          @include dimension(4rem, 3.06rem);
+          border: none;
+          padding: 0;
+          margin: 0 0.13rem;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .btn {
+    z-index: 10;
+    height: 100%;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    color: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: $background_color;
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+
+    &.btn_next {
+      left: auto;
+      right: 0;
+    }
+    .button_right {
+      content: url("~assets/images/common-component/sliderbutton.svg");
+      transform: rotate(180deg);
+      cursor: pointer;
+    }
+    .button_left {
+      content: url("~assets/images/common-component/sliderbutton.svg");
+      cursor: pointer;
+    }
+  }
+}

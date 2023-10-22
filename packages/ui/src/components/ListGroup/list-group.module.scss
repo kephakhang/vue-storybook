@@ -1,0 +1,129 @@
+$box-shadow: 0 0 0 0.2rem #89d1fd;
+$text-decoration: none !important;
+$border_minus_color: #9d9d9d;
+$assigned_list_border_color: #3491ff;
+$assigned_list_background_color: #daeeff;
+$text_color: #262931;
+$available_list_disabled_color: rgb(196, 196, 196);
+$font_stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@keyframes primary_active_switch {
+  0% {
+  }
+  33% {
+    box-shadow: $box-shadow;
+    text-decoration: $text-decoration;
+  }
+  66% {
+    box-shadow: $box-shadow;
+    text-decoration: $text-decoration;
+  }
+  100% {
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.selected_item {
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 100%;
+  color: $text_color;
+  padding-top: 0.25rem;
+  padding-right: 0.25rem;
+
+  span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 18.75rem;
+  }
+
+  .drag_icon {
+    margin-right: 0.7rem;
+    cursor: pointer;
+  }
+
+  .list-item {
+    padding: 0.3rem 0.5rem;
+    height: 2rem;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    font: normal normal normal 0.9rem/1rem $font_stack;
+    letter-spacing: 0;
+    color: $text_color;
+    opacity: 1;
+  }
+
+  .assigned_list_item {
+    @extend .list-item;
+    background: $assigned_list_background_color;
+    border: 0.06rem solid $assigned_list_border_color;
+    border-radius: 0.13rem;
+  }
+
+  .available_list_item {
+    @extend .list-item;
+    border: 0.06rem solid $border_minus_color;
+    border-radius: 0.13rem;
+
+    &[disabled] {
+      background: 0 0 no-repeat padding-box padding-box
+        $available_list_disabled_color;
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .minus_item {
+    border: 0.06rem solid $border_minus_color;
+    border-radius: 0.13rem;
+    opacity: 1;
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
+    margin-left: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &[disabled] {
+      visibility: hidden;
+    }
+
+    &:hover {
+      border: 0.06rem solid $assigned_list_border_color;
+    }
+
+    &:hover .plus_item_icon {
+      filter: unset;
+      display: block;
+    }
+
+    &:hover .minus_item_icon {
+      filter: unset;
+      display: block;
+    }
+
+    .plus_item_icon {
+      content: url("~assets/images/icon/icon-plus.svg");
+      filter: grayscale(1);
+      display: block;
+    }
+
+    .minus_item_icon {
+      content: url("~assets/images/icon/icon-minus.svg");
+      filter: grayscale(1);
+      display: block;
+    }
+  }
+}

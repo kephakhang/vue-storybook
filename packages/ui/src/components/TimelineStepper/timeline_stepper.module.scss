@@ -1,0 +1,113 @@
+$default_color: #3585e5;
+$background_color: white;
+$secondary_color: #3491ff;
+$gray_color: #d1d5db;
+
+.horizontal_progress_bar_content_box {
+  position: relative;
+  display: flex;
+}
+
+.progress_indicator_box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 1.12rem;
+  margin-right: 1.31rem;
+}
+
+// progress-indicator-circle
+.progress_indicator_circle {
+  position: absolute;
+  z-index: 1;
+  width: 1.12rem;
+  height: 1.12rem;
+  border-radius: 50%;
+  border: solid 0.13rem $default_color;
+  background-color: $background_color;
+  box-sizing: border-box;
+  &::before {
+    content: "";
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50%;
+    background-color: $default_color;
+    display: block;
+    position: absolute;
+    left: calc(50% - 0.1rem);
+    top: calc(50% - 0.1rem);
+  }
+  &.start {
+    border-color: transparent;
+    width: 1rem;
+    height: 1rem;
+    background-color: $secondary_color;
+  }
+  &.start::before {
+    background-color: $secondary_color;
+  }
+  &.confirmed {
+    border-color: $secondary_color;
+    background-color: $secondary_color;
+  }
+  &.confirmed::before {
+    background-color: $default_color;
+  }
+  &.current {
+    border-color: $secondary_color;
+    background-color: $secondary_color;
+  }
+  &.current::before {
+    background-color: $background_color;
+  }
+  &.unconfirmed {
+    border-color: $default_color;
+  }
+  &.unconfirmed::before {
+    background-color: $default_color;
+  }
+}
+
+// progress-indicator-line
+.progress_indicator_line {
+  width: 1.12rem;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 0.06rem;
+    background-color: $default_color;
+  }
+
+  &.start.opposite::before {
+    background-color: transparent;
+  }
+
+  &.start::before {
+    background-color: $default_color;
+  }
+
+  &.current.opposite::before {
+    background-color: $default_color;
+  }
+
+  &.current::before {
+    background-color: $gray_color;
+  }
+
+  &.last::before {
+    background-color: transparent !important;
+  }
+
+  &.unconfirmed::before {
+    background-color: $gray_color;
+  }
+  .confirmed::before {
+    background-color: $default_color;
+  }
+}

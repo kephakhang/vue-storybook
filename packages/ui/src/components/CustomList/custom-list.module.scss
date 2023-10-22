@@ -1,0 +1,308 @@
+$color_background: #f5f8ff;
+$color_scrollbar: #c8ced3;
+$color_scrollbar_thumb: rgba(255, 255, 255, 0.5);
+$color_border: #9d9d9d;
+$color_text: #262931;
+$color_hover: #3491ff;
+$color_selected_background: #d5e8ff;
+$color_fixed_background: #c4c4c4;
+$color_fixed_text: #ffffff;
+
+$font_family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font_size_header: 0.8rem;
+$font_size_content: 1rem;
+$font_size_small: 0.75rem;
+
+.custom_list_container {
+  width: 100%;
+  min-width: 27.5rem;
+  max-width: 60.25rem;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: $font_family;
+
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0.44rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $color_scrollbar;
+    border-radius: 0.25rem;
+    -webkit-box-shadow: 0 0 0.0625rem $color_scrollbar_thumb;
+  }
+
+  *,
+  :after,
+  :before,
+  ul,
+  li,
+  p {
+    box-sizing: border-box;
+    list-style: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .available_side {
+    width: calc(50% - 0.94rem);
+    height: 19.1875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .available_side_header {
+      font-size: $font_size_small;
+      margin-bottom: 0.63rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .available_side_contents {
+      width: 100%;
+      height: 16.88rem;
+      padding: 0.63rem 1.19rem;
+      background: $color_background;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      overflow-y: auto;
+      margin-top: 0.44rem;
+
+      .available_content {
+        display: flex;
+        width: 100%;
+        max-width: 29.188rem;
+        height: 1.5rem;
+        gap: 0.38rem;
+        justify-content: space-between;
+
+        :first-child {
+          width: 100%;
+          border: 0.063rem solid $color_border;
+          border-radius: 0.13rem;
+          color: $color_text;
+          font-size: $font_size_content;
+          padding: 0.13rem 0.75rem;
+          flex-grow: 1;
+          background: #ffffff;
+
+          &[selected] {
+            opacity: 0.3;
+          }
+        }
+
+        .list_plus_icon {
+          width: 1.5rem;
+          height: 1.5rem;
+          position: relative;
+          border: 0.063rem solid $color_border;
+          border-radius: 0.125rem;
+          cursor: pointer;
+          flex: 1 0 1.5rem;
+
+          &:before {
+            left: 50%;
+            top: 0.25rem;
+            bottom: 0.25rem;
+            width: 0.125rem;
+            transform: translate(-50%);
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            background: $color_border;
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            background: $color_border;
+          }
+
+          &:after {
+            top: 50%;
+            left: 0.25rem;
+            right: 0.25rem;
+            height: 0.125rem;
+            transform: translateY(-50%);
+          }
+
+          &:hover:before {
+            background: $color_hover;
+          }
+
+          &:hover:after {
+            background: $color_hover;
+          }
+
+          &:hover {
+            border: 0.0625rem solid $color_hover;
+          }
+        }
+      }
+    }
+  }
+
+  .selected_side {
+    width: calc(50% - 0.9375rem);
+    height: 19.188rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    .selected_side_header {
+      font-size: $font_size_small;
+      margin-bottom: 0.33rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &:first-child {
+      gap: 0.625rem;
+    }
+
+    & > div > span {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .selected_content {
+      display: flex;
+      gap: 0.375rem;
+
+      &:hover {
+        cursor: grab;
+      }
+
+      &:active {
+        cursor: grabbing;
+      }
+
+      :nth-child(1) {
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 0.063rem solid $color_border;
+        border-radius: 0.12rem;
+        color: $color_text;
+        font-size: $font_size_small;
+        flex: 1 0 1.5rem;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      :nth-child(2) {
+        width: 100%;
+        border: 0.063rem solid $color_border;
+        border-radius: 0.125rem;
+        color: $color_text;
+        font-size: $font_size_content;
+        padding: 0.12rem 0.75rem;
+        flex-grow: 1;
+        background: #ffffff;
+
+        &:before {
+          content: "";
+          display: inline-flex;
+          width: 0.75rem;
+          height: 0.75rem;
+          background: url("~assets/images/icon/drag-icon.svg") no-repeat;
+          background-position-y: 0.17rem;
+          margin-right: 0.625rem;
+        }
+
+        &[selected] {
+          background: $color_selected_background;
+        }
+
+        &[fixed] {
+          background: $color_fixed_background;
+          color: $color_fixed_text;
+
+          &:before {
+            content: "";
+            background: none;
+          }
+        }
+      }
+
+      .empty_content {
+        border: 0.063rem dotted $color_border;
+        border-radius: 0.125rem;
+
+        &:before {
+          content: "";
+          background: none;
+        }
+      }
+
+      .list_minus_icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: relative;
+        border: 0.0625rem solid $color_border;
+        border-radius: 0.125rem;
+        cursor: pointer;
+        flex: 1 0 1.5rem;
+
+        &:before {
+          left: 50%;
+          top: 0.25rem;
+          bottom: 0.25rem;
+          width: 0.125rem;
+          transform: translate(-50%);
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          background: $color_border;
+        }
+
+        &:after {
+          top: 50%;
+          left: 0.25rem;
+          right: 0.25rem;
+          height: 0.13rem;
+          transform: translateY(-50%);
+        }
+
+        &:hover:before {
+          background: $color_hover;
+        }
+
+        &:hover:after {
+          background: $color_hover;
+        }
+
+        &:hover {
+          border: 0.0625rem solid $color_hover;
+        }
+      }
+
+      .empty_content_icon_area {
+        visibility: hidden;
+        width: 1.5rem;
+        height: 1.5rem;
+        flex: 1 0 1.5rem;
+      }
+    }
+  }
+
+  .sortable_ghost {
+    border: 0.063rem dashed #9d9d9d !important;
+    height: auto !important;
+    overflow: inherit !important;
+    margin: 0 !important;
+    padding: 0.063rem !important;
+  }
+}

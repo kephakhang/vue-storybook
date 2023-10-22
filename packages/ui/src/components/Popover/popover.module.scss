@@ -1,0 +1,21 @@
+$color-background: #ffffff;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+.common_popover {
+  position: absolute;
+  z-index: 100;
+  background-color: $color-background;
+  opacity: 0;
+  transform: translateY(-1.8rem);
+  pointer-events: none;
+  transition: 300ms ease;
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}

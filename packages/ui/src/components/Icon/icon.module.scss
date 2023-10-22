@@ -1,0 +1,120 @@
+$primary-color: #3585e5;
+$secondary-color: #4b4b4b;
+$background-color: #ffffff;
+$hover-color: #daeeff;
+$border-color: #fff;
+$active-border-color: rgba(218, 238, 255, 1);
+$box-shadow-color: #00000026;
+$image-zone-background-color: #e6e6e6;
+$custom_data_table_background_color: #f0f1f3;
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.default {
+  padding: 0.25rem 0.37rem; /* top/bottom, left/right */
+  border-radius: 0.2rem;
+  width: fit-content;
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &[disabled] {
+    color: $background-color;
+    border: inherit;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+
+  &.customizing-data-table {
+    background: $custom_data_table_background_color;
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0.2rem;
+    width: 1.8rem;
+    height: 1.8rem;
+
+    &:hover {
+      background: $hover-color;
+      outline: 0.004rem solid $primary-color;
+    }
+
+    &[active] {
+      background: $hover-color;
+      outline: 0.03rem solid $primary-color;
+    }
+  }
+
+  &.cross-icon {
+    content: url("~assets/images/icon/crossicon.svg");
+    &:hover {
+      background: $hover-color;
+    }
+
+    &:active {
+      outline: 0.03rem solid $primary-color;
+    }
+  }
+  &.sort-desc {
+    content: url("~assets/images/icon/sorticon/sort-down-icon.svg");
+
+    &:hover {
+      content: url("~assets/images/icon/sorticon/sort-down-icon-hover.svg");
+    }
+
+    &[active] {
+      content: url("~assets/images/icon/sorticon/sort-down-icon-active.svg");
+    }
+
+    &[disabled] {
+      background-color: unset;
+    }
+  }
+
+  &.sort-asce {
+    transform: rotate(180deg);
+    content: url("~assets/images/icon/sorticon/sort-down-icon.svg");
+
+    &:hover {
+      content: url("~assets/images/icon/sorticon/sort-down-icon-hover.svg");
+    }
+
+    &[active] {
+      content: url("~assets/images/icon/sorticon/sort-down-icon-active.svg");
+    }
+
+    &[disabled] {
+      background-color: unset;
+    }
+  }
+
+  &.restore-icon {
+    content: url("~assets/images/icon/restore-icon.svg");
+    padding: 0.4rem 0.37rem; /* top/bottom, left/right */
+    &:hover {
+      background: $hover-color;
+    }
+
+    &:active {
+      outline: 0.03rem solid $primary-color;
+    }
+  }
+  &.kebab-menu {
+    content: url("~assets/images/icon/icon-kebab-menu.svg");
+    padding: 0.4rem 0.37rem; /* top/bottom, left/right */
+  }
+  &.information-icon {
+    content: url("~assets/images/icon/information-icon.svg");
+    padding: 0.4rem 0.37rem; /* top/bottom, left/right */
+  }
+}

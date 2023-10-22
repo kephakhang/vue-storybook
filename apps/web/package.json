@@ -1,0 +1,48 @@
+{
+  "name": "web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "clean": "rm -rf node_modules && rm -rf dist && rm -rf .turbo",
+    "dev": "vite",
+    "lint": "eslint \"src/**/*.{js,ts,vue}\" && vue-tsc --noEmit",
+    "lint:fix": "eslint \"src/**/*.{js,ts,vue}\" --fix && vue-tsc --noEmit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emdn/ui": "workspace:*",
+    "@tanstack/vue-query": "^5.0.0",
+    "@vue/runtime-dom": "^3.3.4",
+    "@vueuse/core": "^10.5.0",
+    "axios": "^1.5.1",
+    "mms-notification": "workspace:*",
+    "pinia": "^2.1.7",
+    "radix-vue": "^0.4.1",
+    "vue": "^3.3.4",
+    "vue-hotjar": "^1.4.0",
+    "vue-virtual-scroller": "2.0.0-beta.8",
+    "zod": "^3.22.4",
+    "zod-fetch": "^0.1.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "@iconify/vue": "^4.1.1",
+    "@tanstack/eslint-plugin-query": "^5.0.0",
+    "@vitejs/plugin-vue": "^4.4.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.51.0",
+    "eslint-config-custom": "workspace:*",
+    "icons": "workspace:*",
+    "postcss": "^8.4.31",
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "tailwind-config-custom": "workspace:*",
+    "tailwindcss": "^3.3.3",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.11",
+    "vite-tsconfig-paths": "^4.2.1",
+    "vue-tsc": "^1.8.19"
+  }
+}

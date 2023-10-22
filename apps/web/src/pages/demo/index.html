@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/images/icon/e-icon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta name="description" content="emoldino" />
+    <meta name="keyword" content="emoldino" />
+    <meta name="_csrf" th:content="${_csrf.token}" />
+    <meta name="_csrf_header" th:content="${_csrf.headerName}" />
+    <meta name="robots" content="noindex" />
+    <meta name="google" content="notranslate" />
+    <title>Demo</title>
+  </head>
+  <body>
+    <div
+      id="app"
+      data-th-saleson-context="${salesonContextJson}"
+      data-th-customer-name="${@environment.getProperty('customer.server.name')}"
+      data-th-saml-idp="${@environment.getProperty('saml.idp')}"
+    ></div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

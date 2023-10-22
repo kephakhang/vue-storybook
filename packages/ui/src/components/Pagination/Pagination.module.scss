@@ -1,0 +1,26 @@
+$text_color: #8b8b8b;
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.pagination_container {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  .pagination_label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    /* identical to box height */
+    color: $text-color;
+  }
+}

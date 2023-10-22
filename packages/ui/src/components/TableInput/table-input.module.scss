@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.table_input_main {
+  font-family: "Helvetica Neue", sans-serif;
+  font-style: normal;
+  padding: 4px 8px;
+  border-radius: 3px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 24px;
+
+  & > input {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4b4b4b;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+  &:hover {
+    outline: 0.5px solid #4b4b4b;
+  }
+  &:focus-within {
+    outline: 1.5px solid #daeeff;
+  }
+}

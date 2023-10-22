@@ -1,0 +1,80 @@
+$font_weight_medium: 400;
+$font_weight_bold: 700;
+$font_size_medium: 0.92rem;
+$line_height_title: 1.1rem;
+$line_height_content: 1.07rem;
+$icon_width: 0.81rem;
+$icon_height: 0.81rem;
+$opacity_2: 0.2;
+$border_circle: 50%;
+
+@mixin spacing($property, $number) {
+  #{$property}: $number * 0.25rem;
+}
+
+@mixin opacity($number) {
+  opacity: calc($number / 10);
+}
+
+.summary_tooltip {
+  flex: 1;
+}
+
+.summary_head {
+  display: flex;
+  justify-content: space-between;
+  @include spacing(margin-top, 1);
+}
+
+.summary_title {
+  font-weight: $font_weight_bold;
+  font-size: $font_size_medium;
+  line-height: $line_height_title;
+}
+
+.summary_total {
+  font-weight: $font_weight_medium;
+  font-size: $font_size_medium;
+  line-height: $line_height_title;
+}
+
+.divider {
+  border-bottom: 1px solid #000;
+  @include opacity(2);
+  @include spacing(margin-top, 2);
+  @include spacing(margin-bottom, 2);
+}
+
+.summary_content_headbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headbar_label {
+  font-weight: $font_weight_bold;
+  font-size: $font_size_medium;
+  line-height: $line_height_content;
+}
+
+.summary_content_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: $font_size_medium;
+  line-height: $line_height_content;
+  @include spacing(margin-top, 2);
+  @include spacing(margin-bottom, 2);
+}
+
+.summary_content_item_label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.summary_content_item_label_icon {
+  display: inline-block;
+  width: $icon_width;
+  height: $icon_height;
+  border-radius: $border_circle;
+  @include spacing(margin-right, 2);
+}

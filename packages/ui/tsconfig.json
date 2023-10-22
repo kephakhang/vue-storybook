@@ -1,0 +1,17 @@
+{
+  "extends": "tsconfig/vuejs.json",
+  "include": [".", "package.json"],
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    "paths": {
+      "~/*": ["src/*"],
+      "~assets/*": ["assets/*"]
+    },
+    "noImplicitAny": false
+  },
+  "vueCompilerOptions": {
+    "target": 2
+  }
+}

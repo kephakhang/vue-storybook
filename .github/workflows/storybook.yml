@@ -1,0 +1,41 @@
+name: Build and Deploy
+on:
+  push:
+    # Trigger by tags
+    tags:
+      - "**" # Push tags like v0.1.0/pre-alpha
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 6.32.2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'pnpm'
+      
+      - name: Install dependencies
+        run: |
+          pnpm install
+
+      - name: Build Storybook 🔧
+        run: | # Install yarn packages and build the Storybook files
+          pnpm run build:storybook
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: storybook-deploy # The branch the action should deploy to.
+          FOLDER: packages/ui/docs-build # The folder that the build-storybook script generates files.
+          CLEAN: true # Automatically remove deleted files from the deploy branch

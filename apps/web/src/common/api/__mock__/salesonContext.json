@@ -1,0 +1,1836 @@
+{
+  "user": {
+    "accessRequest": false,
+    "accountLocked": false,
+    "admin": true,
+    "company": {
+      "address": "Seoul, South Korea",
+      "companyCode": "EM - SO",
+      "companyType": "IN_HOUSE",
+      "companyTypeText": "In-house",
+      "createdAt": {
+        "nano": 0,
+        "epochSecond": 1535177522
+      },
+      "createdDate": "2018-08-25",
+      "createdDateTime": "2018-08-25 15:12:02",
+      "email": null,
+      "emoldino": true,
+      "enabled": true,
+      "id": 3633,
+      "manager": "Mardi Park",
+      "memo": "",
+      "moldCount": 0,
+      "name": "eMoldino",
+      "partCount": 0,
+      "phone": "+123123123",
+      "predictedQuantity": 0,
+      "totalMaxCapacity": 0,
+      "totalProduced": 0,
+      "updatedAt": {
+        "nano": 0,
+        "epochSecond": 1659553489
+      },
+      "updatedDate": "2022-08-04",
+      "updatedDateTime": "2022-08-04 04:04:49",
+      "upperTierCompanies": null
+    },
+    "companyId": 3633,
+    "contactDialingCode": null,
+    "contactDialingCountry": "",
+    "contactNumber": null,
+    "createdAt": {
+      "nano": 0,
+      "epochSecond": 1697437086
+    },
+    "createdDate": "2023-10-16",
+    "createdDateTime": "2023-10-16 15:18:06",
+    "deleted": false,
+    "department": "Solution Team",
+    "disableNotificationSystemNode": false,
+    "displayName": "Dev Test",
+    "email": "dev@emoldino.com",
+    "enabled": true,
+    "failedAttempt": 0,
+    "gravatar": "//www.gravatar.com/avatar/b3043243ca97bd6f0dc22fb9b16c1f27?d=mm",
+    "id": 146,
+    "language": null,
+    "lastLogin": {
+      "nano": 0,
+      "epochSecond": 1697523231
+    },
+    "lockTime": null,
+    "loginId": "dev@emoldino.com",
+    "memo": "",
+    "mobileDialingCode": "82",
+    "mobileDialingCountry": "kr",
+    "mobileNumber": "",
+    "name": "Dev Test",
+    "notify": false,
+    "position": "FE",
+    "public": false,
+    "pwdExpiredAt": null,
+    "requested": false,
+    "roleIds": ["1"],
+    "roleUserData": "ROLE_WEB_USER",
+    "roles": [
+      {
+        "createdAt": {
+          "nano": 0,
+          "epochSecond": 1534666892
+        },
+        "updatedAt": {
+          "nano": 0,
+          "epochSecond": 1534666892
+        },
+        "id": 1,
+        "authority": "ROLE_ADMIN",
+        "name": "관리자",
+        "description": "Administrator",
+        "roleType": "ROLE",
+        "enabled": true,
+        "dashboardGroupType": null,
+        "menuIds": ["1291"],
+        "roleTypeName": "일반",
+        "createdDate": "2018-08-19",
+        "createdDateTime": "2018-08-19 17:21:32",
+        "updatedDateTime": "2018-08-19 17:21:32",
+        "updatedDate": "2018-08-19"
+      }
+    ],
+    "ssoId": null,
+    "updatedAt": {
+      "nano": 0,
+      "epochSecond": 1697437086
+    },
+    "updatedDate": "2023-10-16",
+    "updatedDateTime": "2023-10-16 15:18:06"
+  },
+  "ssoLogin": false,
+  "menuTree": {
+    "content": [
+      {
+        "path": "General",
+        "name": "General",
+        "type": "CATEGORY",
+        "width": 0,
+        "height": 0,
+        "active": true,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false,
+        "children": [
+          {
+            "path": "General / OVERVIEW",
+            "name": "Overview",
+            "type": "CATEGORY",
+            "width": 0,
+            "height": 0,
+            "active": true,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "CM9021",
+                "path": "General / OVERVIEW / Dashboard",
+                "name": "Dashboard",
+                "type": "FUNCTION",
+                "url": "/",
+                "icon": "https://dev.emoldino.com/images/icon/tabbed-overview/tabbed-overview.svg",
+                "width": 0,
+                "height": 0,
+                "active": true,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": true,
+                "children": [
+                  {
+                    "id": "WGT-TOL",
+                    "name": "Total Toolings",
+                    "type": "SUBFUNCTION",
+                    "width": 1,
+                    "height": 1,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "WGT-TOL-TCO",
+                    "name": "Total Cost of Ownership",
+                    "type": "SUBFUNCTION",
+                    "width": 1,
+                    "height": 1,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "WGT-TOL-UTL",
+                    "name": "Overall Utilization",
+                    "type": "SUBFUNCTION",
+                    "width": 1,
+                    "height": 1,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "WGT-TOL-OPR",
+                    "name": "Operational Summary",
+                    "type": "SUBFUNCTION",
+                    "width": 1,
+                    "height": 1,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "WGT-TOL-RLO",
+                    "name": "Approved Relocation",
+                    "type": "SUBFUNCTION",
+                    "width": 1,
+                    "height": 1,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "WGT-CYC-TIM-CPL",
+                    "name": "Cycle Time Compliance",
+                    "type": "SUBFUNCTION",
+                    "width": 1,
+                    "height": 1,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "WGT-TOL-EOL",
+                    "name": "End of Life",
+                    "type": "SUBFUNCTION",
+                    "width": 1,
+                    "height": 1,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "WGT-TOL-INA",
+                    "name": "Inactive Toolings",
+                    "type": "SUBFUNCTION",
+                    "width": 1,
+                    "height": 1,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  }
+                ]
+              },
+              {
+                "id": "AS1050",
+                "name": "Work Order",
+                "type": "FUNCTION",
+                "url": "/admin/work-order",
+                "icon": "https://dev.emoldino.com/images/icon/work-order.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "CM9031",
+                "name": "General Alerts",
+                "type": "FUNCTION",
+                "url": "/common/alr",
+                "icon": "https://dev.emoldino.com/images/icon/alert-icon.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false,
+                "children": [
+                  {
+                    "id": "ALERT-DISCONNECTED",
+                    "name": "Disconnection",
+                    "type": "SUBFUNCTION",
+                    "url": "/common/alr#DISCONNECTION",
+                    "icon": "https://dev.emoldino.com/images/icon/alert/disconnection-icon-hover.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false,
+                    "items": [
+                      {
+                        "id": "btnTerminalConfirm",
+                        "name": "Confirm (Terminal)",
+                        "type": "cta-button"
+                      },
+                      {
+                        "id": "btnToolingConfirm",
+                        "name": "Confirm (Tooling)",
+                        "type": "cta-button"
+                      }
+                    ],
+                    "itemsUnpermitted": []
+                  },
+                  {
+                    "id": "ALERT-DETACHMENT",
+                    "name": "Detachment",
+                    "type": "SUBFUNCTION",
+                    "url": "/common/alr#DETACHMENT",
+                    "icon": "https://dev.emoldino.com/images/icon/alert/detachment-icon-hover.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "ALERT-MISCONFIGURE",
+                    "name": "Reset",
+                    "type": "SUBFUNCTION",
+                    "url": "/common/alr#RESET",
+                    "icon": "https://dev.emoldino.com/images/icon/alert/reset-icon-hover.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "ALERT-DATA_SUBMISSION",
+                    "name": "Data Approval",
+                    "type": "SUBFUNCTION",
+                    "url": "/common/alr#DATA_APPROVAL",
+                    "icon": "https://dev.emoldino.com/images/icon/alert/data-approval-icon-hover.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "MASTER DATA",
+            "type": "CATEGORY",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "CM1071",
+                "name": "Data Family",
+                "type": "FUNCTION",
+                "url": "/common/dat-fam",
+                "icon": "https://dev.emoldino.com/images/icon/data-family.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false,
+                "children": [
+                  {
+                    "id": "CM1010",
+                    "name": "Company",
+                    "type": "SUBFUNCTION",
+                    "url": "/common/dat-fam#COMPANY",
+                    "icon": "https://dev.emoldino.com/images/icon/Company.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "CM1020",
+                    "name": "Plant",
+                    "type": "SUBFUNCTION",
+                    "url": "/common/dat-fam#PLANT",
+                    "icon": "https://dev.emoldino.com/images/icon/Location.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "SC1010",
+                    "name": "Category",
+                    "type": "SUBFUNCTION",
+                    "url": "/common/dat-fam#CATEGORY",
+                    "icon": "https://dev.emoldino.com/images/icon/Category.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "PR1010",
+                    "name": "Parts",
+                    "type": "SUBFUNCTION",
+                    "url": "/common/dat-fam#PART",
+                    "icon": "https://dev.emoldino.com/images/icon/part.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "AS1010",
+                    "name": "Tooling",
+                    "type": "SUBFUNCTION",
+                    "url": "/common/dat-fam#TOOLING",
+                    "icon": "https://dev.emoldino.com/images/icon/tooling.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "AS1020",
+                    "name": "Machine",
+                    "type": "SUBFUNCTION",
+                    "url": "/common/dat-fam#MACHINE",
+                    "icon": "https://dev.emoldino.com/images/icon/machine.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  }
+                ]
+              },
+              {
+                "id": "CM1072",
+                "name": "Devices",
+                "type": "FUNCTION",
+                "url": "/common/dvc",
+                "icon": "https://dev.emoldino.com/images/icon/devices_big.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false,
+                "children": [
+                  {
+                    "id": "AS1030",
+                    "name": "Terminal",
+                    "type": "SUBFUNCTION",
+                    "url": "/common/dvc#TERMINAL",
+                    "icon": "https://dev.emoldino.com/images/icon/terminal.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "AS1040",
+                    "name": "Sensor",
+                    "type": "SUBFUNCTION",
+                    "url": "/common/dvc#SENSOR",
+                    "icon": "https://dev.emoldino.com/images/icon/counter.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  }
+                ]
+              },
+              {
+                "id": "CM1070",
+                "name": "Data Import",
+                "type": "FUNCTION",
+                "url": "/common/dat-imp",
+                "icon": "https://dev.emoldino.com/images/icon/dat-imp.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false,
+                "children": [
+                  {
+                    "id": "IMPORT-COMPANY",
+                    "name": "Company",
+                    "type": "SUBFUNCTION",
+                    "url": "/front/dat-imp#company",
+                    "icon": "https://dev.emoldino.com/images/icon/dat-imp/company.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "IMPORT-PLANT",
+                    "name": "Plant",
+                    "type": "SUBFUNCTION",
+                    "url": "/front/dat-imp#plant",
+                    "icon": "https://dev.emoldino.com/images/icon/dat-imp/plant.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "IMPORT-PART",
+                    "name": "Part",
+                    "type": "SUBFUNCTION",
+                    "url": "/front/dat-imp#part",
+                    "icon": "https://dev.emoldino.com/images/icon/dat-imp/part.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "IMPORT-MACHINE",
+                    "name": "Machine",
+                    "type": "SUBFUNCTION",
+                    "url": "/front/dat-imp#machine",
+                    "icon": "https://dev.emoldino.com/images/icon/dat-imp/machine.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "IMPORT-TOOLING",
+                    "name": "Tooling",
+                    "type": "SUBFUNCTION",
+                    "url": "/front/dat-imp#tooling",
+                    "icon": "https://dev.emoldino.com/images/icon/dat-imp/tooling.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Data Mgmt.",
+            "type": "CATEGORY",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "CM1050",
+                "name": "List Management",
+                "type": "FUNCTION",
+                "url": "/admin/checklist-center",
+                "icon": "https://dev.emoldino.com/images/icon/maintenance_checklist.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Asset",
+        "type": "CATEGORY",
+        "width": 0,
+        "height": 0,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false,
+        "children": [
+          {
+            "name": "Life Cycle",
+            "type": "CATEGORY",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "AS6020",
+                "name": "Tooling Audit",
+                "type": "FUNCTION",
+                "url": "/asset/tol-adt",
+                "icon": "https://dev.emoldino.com/images/icon/audit.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "AS7040",
+                "name": "End of Life",
+                "type": "FUNCTION",
+                "url": "/asset/tol-eol",
+                "icon": "https://dev.emoldino.com/images/icon/end-of-life.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "AS7010",
+                "name": "End of Life Cycle",
+                "type": "FUNCTION",
+                "url": "/insight",
+                "icon": "https://dev.emoldino.com/images/icon/end_of_life_cycle.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "AN6040",
+                "name": "Overall Utilization",
+                "type": "FUNCTION",
+                "url": "/analysis/life-cycle",
+                "icon": "https://dev.emoldino.com/images/icon/life-cycle.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false,
+                "children": [
+                  {
+                    "id": "AN6040-01",
+                    "name": "Overall Utilization",
+                    "type": "SUBFUNCTION",
+                    "url": "/analysis/life-cycle#ovr-utl",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Alert Center",
+            "type": "CATEGORY",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "AS9030",
+                "name": "Asset Alerts",
+                "type": "FUNCTION",
+                "url": "/asset/alr",
+                "icon": "https://dev.emoldino.com/images/icon/alert-icon.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false,
+                "children": [
+                  {
+                    "id": "ALERT-RELOCATION",
+                    "name": "Relocation",
+                    "type": "SUBFUNCTION",
+                    "url": "/asset/alr#RELOCATION",
+                    "icon": "https://dev.emoldino.com/images/icon/alert/relocation-icon-hover.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false,
+                    "items": [
+                      {
+                        "id": "btnAlertConfirm",
+                        "name": "Confirm (Alert)",
+                        "type": "cta-button"
+                      }
+                    ],
+                    "itemsUnpermitted": []
+                  },
+                  {
+                    "id": "ALERT-REFURBISHMENT",
+                    "name": "End of Life",
+                    "type": "SUBFUNCTION",
+                    "url": "/asset/alr#END_OF_LIFE",
+                    "icon": "https://dev.emoldino.com/images/icon/alert/refurbishment-icon-hover.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Supply Chain",
+        "type": "CATEGORY",
+        "width": 0,
+        "height": 0,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false,
+        "children": [
+          {
+            "id": "AN6011",
+            "name": "Process Change",
+            "type": "FUNCTION",
+            "url": "/analysis/pro-chg",
+            "icon": "https://dev.emoldino.com/images/icon/process-change.svg",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false
+          },
+          {
+            "id": "SC6040",
+            "name": "Demand Compliance",
+            "type": "FUNCTION",
+            "url": "/supplychain/dem-cpl",
+            "icon": "https://dev.emoldino.com/images/icon/demand-compliance.svg",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false
+          },
+          {
+            "id": "SC6050",
+            "name": "Capacity Planning",
+            "type": "FUNCTION",
+            "url": "/supplychain/cap-pln",
+            "icon": "https://dev.emoldino.com/images/icon/capacity-planning.svg",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false
+          },
+          {
+            "id": "AN6030",
+            "name": "Cycle Time",
+            "type": "FUNCTION",
+            "url": "/analysis/quality",
+            "icon": "https://dev.emoldino.com/images/icon/cycle_time.svg",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "AN6030-01",
+                "name": "Cycle Time Deviation",
+                "type": "SUBFUNCTION",
+                "url": "/analysis/quality#cyc-tim-dev",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "AN6030-02",
+                "name": "Cycle Time Fluctuation",
+                "type": "SUBFUNCTION",
+                "url": "/analysis/quality#cyc-tim-flu",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Production",
+        "type": "CATEGORY",
+        "width": 0,
+        "height": 0,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false,
+        "children": [
+          {
+            "name": "OEE",
+            "type": "CATEGORY",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "PR9010",
+                "name": "OEE Center",
+                "type": "FUNCTION",
+                "url": "/front/oee-center",
+                "icon": "https://dev.emoldino.com/images/icon/oee-icon.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false,
+                "items": [
+                  {
+                    "id": "lnkOeeRiskConfiguration",
+                    "name": "OEE Risk Configuration (link)",
+                    "type": "link",
+                    "idRef": "CM2050"
+                  }
+                ],
+                "itemsUnpermitted": [],
+                "children": [
+                  {
+                    "id": "PR9010-01",
+                    "name": "Number of Machines",
+                    "type": "SUBFUNCTION",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false,
+                    "items": [
+                      {
+                        "id": "lnkMachine",
+                        "name": "Machine (Detail)",
+                        "type": "link",
+                        "idRef": "AS1020"
+                      }
+                    ],
+                    "itemsUnpermitted": []
+                  },
+                  {
+                    "id": "PR9010-02",
+                    "name": "Machine Downtime",
+                    "type": "SUBFUNCTION",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false,
+                    "items": [
+                      {
+                        "id": "lnkMachineDowntime",
+                        "name": "Machine Downtime (Detail)",
+                        "type": "link",
+                        "idRef": "PR9010-03"
+                      }
+                    ],
+                    "itemsUnpermitted": []
+                  },
+                  {
+                    "id": "PR9010-03",
+                    "name": "Machine Downtime (Detail)",
+                    "type": "SUBFUNCTION",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false,
+                    "items": [
+                      {
+                        "id": "btnRegisterReason",
+                        "name": "Register Reason",
+                        "type": "cta-button"
+                      },
+                      {
+                        "id": "btnEditRegisteredReason",
+                        "name": "Edit Registered Reason",
+                        "type": "cta-button"
+                      },
+                      {
+                        "id": "btnEditEndedDowntimeReason",
+                        "name": "Edit Ended Downtime Reason",
+                        "type": "cta-button"
+                      },
+                      {
+                        "id": "btnConfirmDowntime",
+                        "name": "Confirm Downtime",
+                        "type": "cta-button"
+                      }
+                    ],
+                    "itemsUnpermitted": []
+                  },
+                  {
+                    "id": "PR9010-04",
+                    "name": "Parts Produced",
+                    "type": "SUBFUNCTION",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false,
+                    "items": [
+                      {
+                        "id": "lnkPartsProduced",
+                        "name": "Parts Produced (Detail)",
+                        "type": "link",
+                        "idRef": "PR9010-05"
+                      },
+                      {
+                        "id": "btnInputRejectParts",
+                        "name": "Input Reject Part",
+                        "type": "cta-button"
+                      }
+                    ],
+                    "itemsUnpermitted": []
+                  },
+                  {
+                    "id": "PR9010-05",
+                    "name": "Parts Produced (Detail)",
+                    "type": "SUBFUNCTION",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "PR9010-06",
+                    "name": "Reject Rate",
+                    "type": "SUBFUNCTION",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false,
+                    "items": [
+                      {
+                        "id": "lnkRejectRate",
+                        "name": "Reject Rate (Detail)",
+                        "type": "link",
+                        "idRef": "PR9010-07"
+                      }
+                    ],
+                    "itemsUnpermitted": []
+                  },
+                  {
+                    "id": "PR9010-07",
+                    "name": "Reject Rate (Detail)",
+                    "type": "SUBFUNCTION",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "PR9010-08",
+                    "name": "OEE",
+                    "type": "SUBFUNCTION",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  },
+                  {
+                    "id": "PR9010-09",
+                    "name": "Machine Downtime Events",
+                    "type": "SUBFUNCTION",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false
+                  }
+                ]
+              },
+              {
+                "id": "PR2010",
+                "name": "Reject Rate",
+                "type": "FUNCTION",
+                "url": "/admin/reject-rates",
+                "icon": "https://dev.emoldino.com/images/icon/reject_rate.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              }
+            ]
+          },
+          {
+            "name": "Alert Center",
+            "type": "CATEGORY",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "PR9030",
+                "name": "Production Alerts",
+                "type": "FUNCTION",
+                "url": "/production/alr",
+                "icon": "https://dev.emoldino.com/images/icon/alert-icon.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false,
+                "children": [
+                  {
+                    "id": "ALERT-DOWNTIME_MACHINE",
+                    "name": "Machine Downtime",
+                    "type": "SUBFUNCTION",
+                    "url": "/production/alr#MACHINE_DOWNTIME",
+                    "icon": "https://dev.emoldino.com/images/icon/alert/downtime-icon-hover.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false,
+                    "items": [
+                      {
+                        "id": "btnAlertRegisterReason",
+                        "name": "Register Reason (Alert)",
+                        "type": "cta-button"
+                      },
+                      {
+                        "id": "btnAlertEditRegisteredReason",
+                        "name": "Edit Registered Reason (Alert)",
+                        "type": "cta-button"
+                      },
+                      {
+                        "id": "btnHistoryLogConfirmDowntime",
+                        "name": "Confirm Downtime (History Log)",
+                        "type": "cta-button"
+                      },
+                      {
+                        "id": "btnHistoryLogEditDowntimeReason",
+                        "name": "Edit Downtime Reason (History Log)",
+                        "type": "cta-button"
+                      }
+                    ],
+                    "itemsUnpermitted": []
+                  },
+                  {
+                    "id": "ALERT-CYCLE_TIME",
+                    "name": "Cycle Time",
+                    "type": "SUBFUNCTION",
+                    "url": "/production/alr#CYCLE_TIME",
+                    "icon": "https://dev.emoldino.com/images/icon/alert/cycle-time-icon-hover.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false,
+                    "items": [
+                      {
+                        "id": "btnAlertConfirm",
+                        "name": "Confirm (Alert)",
+                        "type": "cta-button"
+                      },
+                      {
+                        "id": "btnOutsideL1Confirm",
+                        "name": "Confirm (Outside L1)",
+                        "type": "cta-button"
+                      },
+                      {
+                        "id": "btnOutsideL2Confirm",
+                        "name": "Confirm (Outside L2)",
+                        "type": "cta-button"
+                      }
+                    ],
+                    "itemsUnpermitted": []
+                  },
+                  {
+                    "id": "ALERT-EFFICIENCY",
+                    "name": "Uptime",
+                    "type": "SUBFUNCTION",
+                    "url": "/production/alr#UPTIME",
+                    "icon": "https://dev.emoldino.com/images/icon/alert/uptime-icon-hover.svg",
+                    "width": 0,
+                    "height": 0,
+                    "active": false,
+                    "enabled": true,
+                    "showsEvenNoChildrenPermitted": false,
+                    "items": [
+                      {
+                        "id": "btnAlertConfirm",
+                        "name": "Confirm (Alert)",
+                        "type": "cta-button"
+                      },
+                      {
+                        "id": "btnOutsideL1Confirm",
+                        "name": "Confirm (Outside L1)",
+                        "type": "cta-button"
+                      },
+                      {
+                        "id": "btnOutsideL2Confirm",
+                        "name": "Confirm (Outside L2)",
+                        "type": "cta-button"
+                      }
+                    ],
+                    "itemsUnpermitted": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Administration",
+        "type": "CATEGORY",
+        "width": 0,
+        "height": 0,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false,
+        "children": [
+          {
+            "name": "Personal",
+            "type": "CATEGORY",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "CM2011",
+                "name": "Profile",
+                "type": "FUNCTION",
+                "url": "/profile/account",
+                "icon": "https://dev.emoldino.com/images/icon/profile.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "CM2070",
+                "name": "Currency",
+                "type": "FUNCTION",
+                "url": "/admin/currency",
+                "icon": "https://dev.emoldino.com/images/icon/Currency.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              }
+            ]
+          },
+          {
+            "name": "System Settings",
+            "type": "CATEGORY",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "CM2010",
+                "name": "User",
+                "type": "FUNCTION",
+                "url": "/admin/users",
+                "icon": "https://dev.emoldino.com/images/icon/User.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "CM2020",
+                "name": "Access Control",
+                "type": "FUNCTION",
+                "url": "/admin/roles",
+                "icon": "https://dev.emoldino.com/images/icon/access_control.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "CM2030",
+                "name": "Role-User",
+                "type": "FUNCTION",
+                "url": "/admin/role-config",
+                "icon": "https://dev.emoldino.com/images/icon/person-add-icon.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "CM2041",
+                "name": "Menu Permission",
+                "type": "FUNCTION",
+                "url": "/admin/permission-config-new",
+                "icon": "https://dev.emoldino.com/images/icon/access_control.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "CM2050",
+                "name": "Configuration",
+                "type": "FUNCTION",
+                "url": "/admin/configuration",
+                "icon": "https://dev.emoldino.com/images/icon/Configuration.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "CM1080",
+                "name": "File Center",
+                "type": "FUNCTION",
+                "url": "/common/fle-mng",
+                "icon": "https://dev.emoldino.com/images/icon/file-management.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "In Communication",
+        "type": "UTILITY",
+        "icon": "https://dev.emoldino.com/images/icon/communications_icon.svg",
+        "width": 0,
+        "height": 0,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false,
+        "children": [
+          {
+            "name": "In Communication",
+            "type": "CATEGORY",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "CM3010",
+                "name": "Support Center",
+                "type": "FUNCTION",
+                "url": "/support/customer-support",
+                "icon": "https://dev.emoldino.com/images/icon/customer-support.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "CM4010",
+                "name": "Tutorials",
+                "type": "FUNCTION",
+                "url": "/support/tutorial",
+                "icon": "https://dev.emoldino.com/images/icon/tutorials.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "CM2080",
+                "name": "Version History",
+                "type": "FUNCTION",
+                "url": "/support/version-history",
+                "icon": "https://dev.emoldino.com/images/icon/version.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "totalElements": 6
+  },
+  "currentCategoryMenu": {
+    "path": "General",
+    "name": "General",
+    "type": "CATEGORY",
+    "width": 0,
+    "height": 0,
+    "active": true,
+    "enabled": true,
+    "showsEvenNoChildrenPermitted": false,
+    "children": [
+      {
+        "path": "General / OVERVIEW",
+        "name": "Overview",
+        "type": "CATEGORY",
+        "width": 0,
+        "height": 0,
+        "active": true,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false,
+        "children": [
+          {
+            "id": "CM9021",
+            "path": "General / OVERVIEW / Dashboard",
+            "name": "Dashboard",
+            "type": "FUNCTION",
+            "url": "/",
+            "icon": "https://dev.emoldino.com/images/icon/tabbed-overview/tabbed-overview.svg",
+            "width": 0,
+            "height": 0,
+            "active": true,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": true,
+            "children": [
+              {
+                "id": "WGT-TOL",
+                "name": "Total Toolings",
+                "type": "SUBFUNCTION",
+                "width": 1,
+                "height": 1,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "WGT-TOL-TCO",
+                "name": "Total Cost of Ownership",
+                "type": "SUBFUNCTION",
+                "width": 1,
+                "height": 1,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "WGT-TOL-UTL",
+                "name": "Overall Utilization",
+                "type": "SUBFUNCTION",
+                "width": 1,
+                "height": 1,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "WGT-TOL-OPR",
+                "name": "Operational Summary",
+                "type": "SUBFUNCTION",
+                "width": 1,
+                "height": 1,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "WGT-TOL-RLO",
+                "name": "Approved Relocation",
+                "type": "SUBFUNCTION",
+                "width": 1,
+                "height": 1,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "WGT-CYC-TIM-CPL",
+                "name": "Cycle Time Compliance",
+                "type": "SUBFUNCTION",
+                "width": 1,
+                "height": 1,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "WGT-TOL-EOL",
+                "name": "End of Life",
+                "type": "SUBFUNCTION",
+                "width": 1,
+                "height": 1,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "WGT-TOL-INA",
+                "name": "Inactive Toolings",
+                "type": "SUBFUNCTION",
+                "width": 1,
+                "height": 1,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              }
+            ]
+          },
+          {
+            "id": "AS1050",
+            "name": "Work Order",
+            "type": "FUNCTION",
+            "url": "/admin/work-order",
+            "icon": "https://dev.emoldino.com/images/icon/work-order.svg",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false
+          },
+          {
+            "id": "CM9031",
+            "name": "General Alerts",
+            "type": "FUNCTION",
+            "url": "/common/alr",
+            "icon": "https://dev.emoldino.com/images/icon/alert-icon.svg",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "ALERT-DISCONNECTED",
+                "name": "Disconnection",
+                "type": "SUBFUNCTION",
+                "url": "/common/alr#DISCONNECTION",
+                "icon": "https://dev.emoldino.com/images/icon/alert/disconnection-icon-hover.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false,
+                "items": [
+                  {
+                    "id": "btnTerminalConfirm",
+                    "name": "Confirm (Terminal)",
+                    "type": "cta-button"
+                  },
+                  {
+                    "id": "btnToolingConfirm",
+                    "name": "Confirm (Tooling)",
+                    "type": "cta-button"
+                  }
+                ],
+                "itemsUnpermitted": []
+              },
+              {
+                "id": "ALERT-DETACHMENT",
+                "name": "Detachment",
+                "type": "SUBFUNCTION",
+                "url": "/common/alr#DETACHMENT",
+                "icon": "https://dev.emoldino.com/images/icon/alert/detachment-icon-hover.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "ALERT-MISCONFIGURE",
+                "name": "Reset",
+                "type": "SUBFUNCTION",
+                "url": "/common/alr#RESET",
+                "icon": "https://dev.emoldino.com/images/icon/alert/reset-icon-hover.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "ALERT-DATA_SUBMISSION",
+                "name": "Data Approval",
+                "type": "SUBFUNCTION",
+                "url": "/common/alr#DATA_APPROVAL",
+                "icon": "https://dev.emoldino.com/images/icon/alert/data-approval-icon-hover.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "MASTER DATA",
+        "type": "CATEGORY",
+        "width": 0,
+        "height": 0,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false,
+        "children": [
+          {
+            "id": "CM1071",
+            "name": "Data Family",
+            "type": "FUNCTION",
+            "url": "/common/dat-fam",
+            "icon": "https://dev.emoldino.com/images/icon/data-family.svg",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "CM1010",
+                "name": "Company",
+                "type": "SUBFUNCTION",
+                "url": "/common/dat-fam#COMPANY",
+                "icon": "https://dev.emoldino.com/images/icon/Company.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "CM1020",
+                "name": "Plant",
+                "type": "SUBFUNCTION",
+                "url": "/common/dat-fam#PLANT",
+                "icon": "https://dev.emoldino.com/images/icon/Location.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "SC1010",
+                "name": "Category",
+                "type": "SUBFUNCTION",
+                "url": "/common/dat-fam#CATEGORY",
+                "icon": "https://dev.emoldino.com/images/icon/Category.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "PR1010",
+                "name": "Parts",
+                "type": "SUBFUNCTION",
+                "url": "/common/dat-fam#PART",
+                "icon": "https://dev.emoldino.com/images/icon/part.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "AS1010",
+                "name": "Tooling",
+                "type": "SUBFUNCTION",
+                "url": "/common/dat-fam#TOOLING",
+                "icon": "https://dev.emoldino.com/images/icon/tooling.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "AS1020",
+                "name": "Machine",
+                "type": "SUBFUNCTION",
+                "url": "/common/dat-fam#MACHINE",
+                "icon": "https://dev.emoldino.com/images/icon/machine.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              }
+            ]
+          },
+          {
+            "id": "CM1072",
+            "name": "Devices",
+            "type": "FUNCTION",
+            "url": "/common/dvc",
+            "icon": "https://dev.emoldino.com/images/icon/devices_big.svg",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "AS1030",
+                "name": "Terminal",
+                "type": "SUBFUNCTION",
+                "url": "/common/dvc#TERMINAL",
+                "icon": "https://dev.emoldino.com/images/icon/terminal.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "AS1040",
+                "name": "Sensor",
+                "type": "SUBFUNCTION",
+                "url": "/common/dvc#SENSOR",
+                "icon": "https://dev.emoldino.com/images/icon/counter.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              }
+            ]
+          },
+          {
+            "id": "CM1070",
+            "name": "Data Import",
+            "type": "FUNCTION",
+            "url": "/common/dat-imp",
+            "icon": "https://dev.emoldino.com/images/icon/dat-imp.svg",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false,
+            "children": [
+              {
+                "id": "IMPORT-COMPANY",
+                "name": "Company",
+                "type": "SUBFUNCTION",
+                "url": "/front/dat-imp#company",
+                "icon": "https://dev.emoldino.com/images/icon/dat-imp/company.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "IMPORT-PLANT",
+                "name": "Plant",
+                "type": "SUBFUNCTION",
+                "url": "/front/dat-imp#plant",
+                "icon": "https://dev.emoldino.com/images/icon/dat-imp/plant.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "IMPORT-PART",
+                "name": "Part",
+                "type": "SUBFUNCTION",
+                "url": "/front/dat-imp#part",
+                "icon": "https://dev.emoldino.com/images/icon/dat-imp/part.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "IMPORT-MACHINE",
+                "name": "Machine",
+                "type": "SUBFUNCTION",
+                "url": "/front/dat-imp#machine",
+                "icon": "https://dev.emoldino.com/images/icon/dat-imp/machine.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              },
+              {
+                "id": "IMPORT-TOOLING",
+                "name": "Tooling",
+                "type": "SUBFUNCTION",
+                "url": "/front/dat-imp#tooling",
+                "icon": "https://dev.emoldino.com/images/icon/dat-imp/tooling.svg",
+                "width": 0,
+                "height": 0,
+                "active": false,
+                "enabled": true,
+                "showsEvenNoChildrenPermitted": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Data Mgmt.",
+        "type": "CATEGORY",
+        "width": 0,
+        "height": 0,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false,
+        "children": [
+          {
+            "id": "CM1050",
+            "name": "List Management",
+            "type": "FUNCTION",
+            "url": "/admin/checklist-center",
+            "icon": "https://dev.emoldino.com/images/icon/maintenance_checklist.svg",
+            "width": 0,
+            "height": 0,
+            "active": false,
+            "enabled": true,
+            "showsEvenNoChildrenPermitted": false
+          }
+        ]
+      }
+    ]
+  },
+  "currentFunctionMenu": {
+    "id": "CM9021",
+    "path": "General / OVERVIEW / Dashboard",
+    "name": "Dashboard",
+    "type": "FUNCTION",
+    "url": "/",
+    "icon": "https://dev.emoldino.com/images/icon/tabbed-overview/tabbed-overview.svg",
+    "width": 0,
+    "height": 0,
+    "active": true,
+    "enabled": true,
+    "showsEvenNoChildrenPermitted": true,
+    "children": [
+      {
+        "id": "WGT-TOL",
+        "name": "Total Toolings",
+        "type": "SUBFUNCTION",
+        "width": 1,
+        "height": 1,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false
+      },
+      {
+        "id": "WGT-TOL-TCO",
+        "name": "Total Cost of Ownership",
+        "type": "SUBFUNCTION",
+        "width": 1,
+        "height": 1,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false
+      },
+      {
+        "id": "WGT-TOL-UTL",
+        "name": "Overall Utilization",
+        "type": "SUBFUNCTION",
+        "width": 1,
+        "height": 1,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false
+      },
+      {
+        "id": "WGT-TOL-OPR",
+        "name": "Operational Summary",
+        "type": "SUBFUNCTION",
+        "width": 1,
+        "height": 1,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false
+      },
+      {
+        "id": "WGT-TOL-RLO",
+        "name": "Approved Relocation",
+        "type": "SUBFUNCTION",
+        "width": 1,
+        "height": 1,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false
+      },
+      {
+        "id": "WGT-CYC-TIM-CPL",
+        "name": "Cycle Time Compliance",
+        "type": "SUBFUNCTION",
+        "width": 1,
+        "height": 1,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false
+      },
+      {
+        "id": "WGT-TOL-EOL",
+        "name": "End of Life",
+        "type": "SUBFUNCTION",
+        "width": 1,
+        "height": 1,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false
+      },
+      {
+        "id": "WGT-TOL-INA",
+        "name": "Inactive Toolings",
+        "type": "SUBFUNCTION",
+        "width": 1,
+        "height": 1,
+        "active": false,
+        "enabled": true,
+        "showsEvenNoChildrenPermitted": false
+      }
+    ]
+  },
+  "menu": null,
+  "oveview": null,
+  "firstAdminMenu": null,
+  "firstSupportMenu": null,
+  "firstInsightMenu": null,
+  "firstReportMenu": null,
+  "alertMenu": null,
+  "oeeMenu": null
+}

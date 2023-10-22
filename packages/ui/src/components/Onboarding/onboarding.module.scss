@@ -1,0 +1,116 @@
+$color_tooltip_background: rgba(0, 0, 0, 0.5);
+$color_tooltip_border: #5a4ab9;
+$color_tooltip_text: #ffffff;
+$font_stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+.tooltipMain {
+  position: fixed;
+  z-index: 199998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color_tooltip_background;
+  transition: opacity 0.3s ease;
+
+  .tooltip {
+    display: inline-block;
+    border-bottom: 0.06rem dotted $color_tooltip_border;
+
+    .main {
+      margin-left: 2.5rem;
+      .footer {
+        display: flex;
+      }
+    }
+
+    .customTitle {
+      display: flex;
+    }
+
+    .head {
+      font-family: $font_stack;
+      font-weight: 700;
+      font-size: 0.9rem;
+      line-height: 1.1rem;
+      margin-top: 0.9rem;
+    }
+
+    .crossImage {
+      margin-left: 58%;
+      margin-top: 3%;
+      cursor: pointer;
+
+      .crossIcon {
+        content: url("~assets/images/common-component/cross-white.svg");
+      }
+    }
+
+    .body {
+      margin-top: 1.25rem;
+      width: 88%;
+      font-size: 0.92rem;
+      font-weight: 400;
+      line-height: 1.1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .step {
+      margin-top: 1.25rem;
+      margin-bottom: 0.63rem;
+      font-size: 0.92rem;
+      font-weight: 400;
+    }
+
+    .button {
+      margin-top: 0.63rem;
+      margin-left: 10.63rem;
+      margin-bottom: 0.63rem;
+    }
+
+    .stepOne,
+    .stepTwo,
+    .stepThree,
+    .stepFour {
+      width: 359px;
+      background-color: $color_tooltip_border;
+      color: $color_tooltip_text;
+      border-radius: 0.2rem;
+      padding: 0.3rem 0;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .stepTwo {
+      top: 2%;
+      right: 2%;
+    }
+
+    .stepTwo::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin-top: -0.3rem;
+      border-width: 0.63rem;
+      border-style: solid;
+      border-color: transparent $color_tooltip_border transparent transparent;
+    }
+
+    .stepThree {
+      .stepThree::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -0.3rem;
+        border-width: 0.63rem;
+        border-style: solid;
+        border-color: transparent transparent $color_tooltip_border transparent;
+      }
+    }
+  }
+}

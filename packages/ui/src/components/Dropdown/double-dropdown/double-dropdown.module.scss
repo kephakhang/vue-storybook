@@ -1,0 +1,194 @@
+$background_color: white;
+$text_color: #595959;
+$input_color: #0075ff;
+$vertical_line_color: #d3d3d3;
+$checkbox_border_color: rgb(151, 151, 151);
+$reset_button_color: #3491ff;
+$label_font_family: Helvetica Neue, Helvetica, Microsoft Sans Serif, Arial,
+  Arimo;
+$reset_button_font: 0.88rem/1rem Helvetica Neue;
+
+@mixin font_styles($font_weight, $line_height, $height) {
+  font-family: $label_font_family;
+  font-style: normal;
+  font-weight: $font_weight;
+  font-size: 0.92rem;
+  line-height: $line_height;
+  letter-spacing: 0;
+  height: $height;
+  color: $text_color;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.dropdown_wrap {
+  min-width: 11.25rem;
+  max-height: 33.4rem;
+  background: $background_color;
+  z-index: 999;
+  top: 2.75rem;
+  left: 1rem;
+  position: static;
+  height: fit-content;
+  width: 21.4rem;
+  border-radius: 0.19rem;
+  box-shadow: rgb(0 0 0 / 25%) 0 0.25rem 0.25rem;
+
+  ul,
+  li {
+    list-style: none;
+    margin: 0;
+  }
+
+  .parent_item {
+    overflow-y: auto;
+    max-height: fit-content;
+    padding: 0;
+
+    label {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .col_md {
+      position: relative;
+      width: 100%;
+      min-height: 0.06rem;
+      padding-right: 0.94rem;
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+
+      &.custom_padding {
+        padding-left: 0.75rem;
+        margin-bottom: 0.75rem;
+
+        label {
+          display: inline-block;
+          margin-bottom: 0.5rem;
+
+          .font_setting {
+            @include font_styles(700, 1.13rem, 1.13rem);
+            margin-top: 0.88rem;
+            width: fit-content;
+            margin-bottom: 0.88rem;
+          }
+        }
+
+        ul.child_item {
+          padding-left: 0;
+
+          li {
+            margin: -0.25rem 0;
+
+            label {
+              @include font_styles(400, 1.06rem, 2rem);
+              font-family: $label_font_family;
+              display: flex;
+              align-items: center;
+              padding: 0 0.5rem;
+              cursor: pointer;
+
+              .checkbox_custom {
+                width: 0.81rem;
+                height: 0.81rem;
+                border: 0.06rem solid $checkbox_border_color;
+                border-radius: 0.06rem;
+                margin-right: 0.63rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+
+              input {
+                display: none;
+
+                &:checked + .checkbox_custom {
+                  border-color: $input_color;
+
+                  &:before {
+                    content: "";
+                    width: 0.56rem;
+                    height: 0.56rem;
+                    background-color: $input_color;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        span.vertical_line {
+          position: absolute;
+          border-left: 0.06rem solid $vertical_line_color;
+          height: 93%;
+          top: 1.75rem;
+          margin-left: calc(100% - 0.75rem);
+        }
+      }
+    }
+  }
+
+  .buttons_custom {
+    padding: 0.56rem 1rem 0.5rem 0.63rem;
+    align-items: center;
+  }
+
+  .w_100 {
+    width: 100%;
+  }
+
+  .align_items_center {
+    align-items: center;
+  }
+
+  .d_flex {
+    display: flex;
+  }
+
+  .justify_content_between {
+    justify-content: space-between;
+
+    .reset_styles {
+      height: 1.06rem;
+      text-align: left;
+      font: $reset_button_font;
+      font-family: $label_font_family;
+      letter-spacing: 0;
+      color: $reset_button_color;
+
+      &.all_select_list {
+        display: flex;
+        align-items: center;
+
+        & > div {
+          font-size: 0.88rem;
+          padding: 0.31rem;
+          cursor: pointer;
+          min-width: 5.63rem;
+
+          &:first-of-type {
+            margin-right: 0.94rem;
+          }
+        }
+      }
+    }
+
+    .btn_custom {
+      width: 3.38rem;
+      height: 1.8rem;
+      border-radius: 0.19rem;
+      text-align: center;
+      padding: 0;
+    }
+  }
+}

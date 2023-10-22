@@ -1,0 +1,67 @@
+$color_background: #ffffff;
+$color-border: #e3e7ea;
+$color_list_item: #4b4b4b;
+$color_active_border: #deedff;
+$color_cta: #298bff;
+
+.main {
+  width: 100%;
+
+  .form-inline {
+    display: flex;
+    flex-flow: nowrap;
+    align-items: center;
+    margin-top: 0.6rem;
+
+    .remove-item {
+      margin-bottom: 1.57rem;
+
+      .trash-custom-icon {
+        position: fixed;
+        margin-left: 0.57rem;
+        cursor: pointer;
+      }
+    }
+
+    input {
+      width: 100%;
+      height: 2rem;
+      position: sticky;
+      left: 10.6rem;
+      padding-left: 0.3rem;
+    }
+
+    .custom-input {
+      border-radius: 0.2rem;
+      border: 0.06rem solid $color-border;
+      background: $color_background no-repeat padding-box;
+      outline: none;
+      box-shadow: none;
+
+      &:hover {
+        border: 0.06rem solid $color_list_item;
+        background: $color_background no-repeat padding-box;
+      }
+
+      &:active,
+      &:focus {
+        border: 0.1rem solid $color_active_border;
+        background: $color_background no-repeat padding-box;
+      }
+    }
+  }
+
+  .add-items {
+    .add-more-item {
+      cursor: pointer;
+      color: $color_cta;
+      font-size: 0.7rem;
+      margin-top: 0.5rem;
+      text-align: left;
+      width: 100%;
+      height: 2rem;
+      position: sticky;
+      left: 10.6rem;
+    }
+  }
+}

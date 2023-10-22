@@ -1,0 +1,70 @@
+.arrayDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.arrayDiv span:nth-child(1) {
+  color: #3491ff;
+}
+
+.arrayDiv span:nth-child(2) {
+  font-size: 11.25px;
+}
+
+.singleDiv {
+  font-size: 14.66px;
+}
+
+tr {
+  height: 49px;
+}
+
+table th {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 14.66px;
+  color: #4b4b4b;
+  text-align: left;
+  background: #e5e5e5;
+  cursor: pointer;
+  padding: 18px 16px;
+  min-width: 30px;
+}
+table td:last-child {
+  border-right: none;
+}
+
+table tbody tr:nth-child(2n) td {
+  background: #e5e5e5;
+}
+
+table {
+  border-collapse: collapse;
+  background: #ffff;
+}
+table td {
+  text-align: left;
+  font-weight: 400;
+  font-size: 14.66px;
+  color: #4b4b4b;
+  padding: 18px 16px;
+}
+table td:last-child {
+  border-right: none;
+}
+.heading {
+  display: flex;
+}
+
+.arrow_down {
+  content: url("~assets/images/icon/sorticon/sort-down-icon.svg");
+}
+.arrow_up {
+  content: url("~assets/images/icon/sorticon/sort-down-icon-active.svg");
+  transform: rotate(180deg);
+}
+.arrow {
+  width: 20px;
+  height: 20px;
+}

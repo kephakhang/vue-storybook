@@ -1,0 +1,14 @@
+{
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 80,
+  "eslint.validate": ["vue", "javascript", "typescript", "html"],
+  "eslint.workingDirectories": [
+    { "pattern": "apps/*/" },
+    { "pattern": "packages/*/" },
+    { "pattern": "packages/@emdn/ui/*/" }
+  ],
+  "json.schemaDownload.enable": true
+}

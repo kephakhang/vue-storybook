@@ -1,0 +1,212 @@
+// common start ==========================================================================================
+/* selected, choosing (현재는 choosing 과 selected 과 디자인이 같음. 하지만 추후에 변경될 수 있기 때문에 분리해둠.) */
+.selected,
+.choosing {
+  color: #fff !important;
+  background-color: #519ffc;
+  border: solid #fff 1px;
+  border-radius: 50%;
+}
+
+// range 도 현재는 daily 에만 적용되나 추후에는 다른 곳에도 적용될 여지가 있기 때문에 공통으로 정의해놓음.
+.selected-start-range,
+.selected-end-range,
+.choosing-start-range,
+.choosing-end-range {
+  width: 50%;
+  height: 19px;
+  background-color: #3491ff;
+  position: absolute;
+  z-index: 1;
+}
+
+.selected-start-range,
+.choosing-start-range {
+  right: 0;
+}
+
+.selected-end-range,
+.choosing-end-range {
+  left: 0;
+}
+
+.selected-range,
+.choosing-range {
+  color: #fff !important;
+  background-color: #3491ff;
+  border-radius: 0 !important;
+  width: 100% !important;
+}
+
+.today {
+  color: #3182ce;
+}
+
+.disabled {
+  color: #d5d5d5;
+  pointer-events: none;
+}
+
+.date-picker-body {
+  height: 197px;
+  color: #4b4b4b;
+  display: grid;
+  position: relative;
+
+  .date-picker-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: 50% 50%;
+    position: relative;
+    cursor: pointer;
+
+    & .disabled {
+      color: #d5d5d5;
+      pointer-events: none;
+      text-decoration: none;
+    }
+
+    .date-picker-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 2;
+
+      span {
+        & .disabled {
+          color: #d5d5d5;
+          pointer-events: none;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// common end ============================================================================================
+
+// daily calendar ========================================================================================
+.date-picker-body.daily {
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  font-size: 12px;
+
+  .date-picker-item {
+    .date-picker-number {
+      width: 19px;
+      height: 19px;
+    }
+  }
+}
+
+/* dow: day(s) of week */
+.date-picker-dow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-weight: 700;
+}
+// daily calendar end ================================================================================
+
+// weekly calendar start =============================================================================
+.date-picker-body.weekly {
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  font-size: 12px;
+
+  .date-picker-item {
+    .date-picker-number {
+      width: 17px;
+      height: 17px;
+    }
+  }
+}
+// weekly calendar end ===============================================================================
+
+// monthly calendar start ============================================================================
+.date-picker-body.monthly {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  font-size: 14px;
+
+  .date-picker-item {
+    .date-picker-number {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+// monthly calendar end =================================================================================
+
+// quarterly calendar start ============================================================================
+.date-picker-body.quarterly {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  font-size: 14px;
+
+  .date-picker-item {
+    .date-picker-number {
+      width: 75px;
+      height: 75px;
+    }
+  }
+}
+// quarterly calendar end =================================================================================
+
+// quarterly calendar start ============================================================================
+.date-picker-body.quarterly-new {
+  padding: 10px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+
+  .quarter-row {
+    width: 180px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15.5px;
+    border-radius: 4px;
+    &:hover {
+      background-color: #c4c4c4;
+    }
+
+    span {
+      font-size: 11.25px;
+      b {
+        font-size: 14.66px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .selected {
+    border-radius: 5px;
+  }
+
+  .date-picker-item {
+    .date-picker-number {
+      width: 75px;
+      height: 75px;
+    }
+  }
+}
+// quarterly calendar end =================================================================================
+
+// yearly calendar start ================================================================================
+.date-picker-body.yearly {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  font-size: 12px;
+
+  .date-picker-item {
+    .date-picker-number {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
+// yearly calendar end ==================================================================================

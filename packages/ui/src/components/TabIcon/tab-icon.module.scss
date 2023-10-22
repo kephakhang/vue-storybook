@@ -1,0 +1,137 @@
+$chart_wrapper_border_hover_color: rgba(53, 133, 229, 1);
+$chart_wrapper_border_active_color: rgba(218, 238, 255, 1);
+$chart_wrapper_active_background_color: #ffffff;
+$image_zone_background_color: #e6e6e6;
+$image_zone_hover_background_color: #daeeff;
+$chart_title_color: #4b4b4b;
+$chart_title_Text_color: #aaaaaa;
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.chart_wrapper {
+  margin-top: 1.25rem;
+  width: 15.4rem;
+  height: 5.5rem;
+  border: 0.06rem solid $chart_wrapper_active_background_color;
+  border-radius: 0.2rem;
+  margin-right: 2rem;
+
+  &:hover {
+    border: 0.06rem solid $chart_wrapper_border_hover_color;
+    box-shadow: 0 0.2rem 0.25rem 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &[active] {
+    background: $chart_wrapper_active_background_color;
+    border: 0.25rem solid $chart_wrapper_border_active_color;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .img_zone {
+    width: 3.13rem;
+    height: 3.13rem;
+    padding: 0.7rem;
+    background: $image_zone_background_color;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    margin-left: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.active .img_zone img {
+      width: 110%;
+    }
+
+    &.hover_icon {
+      width: 110%;
+      max-width: 110%;
+    }
+  }
+
+  .img_zone_hover_background {
+    background: $image_zone_hover_background_color;
+  }
+
+  &.active .img_zone img {
+    width: 110%;
+  }
+
+  &.small {
+    width: 9.8rem;
+    height: 4.5rem;
+
+    &.img_zone {
+      width: 2.25rem;
+      height: 2.25rem;
+      padding: 0.43rem;
+      margin-right: 0.25rem;
+      margin-left: 0.38rem;
+    }
+  }
+
+  .chart_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: $chart_title_color;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      color: $chart_title_Text_color;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  & > div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    box-shadow: 0 0.2rem 0.38rem rgb(0 0 0 / 16%);
+    border-radius: 0.2rem;
+    filter: grayscale(1);
+    height: 100%;
+    width: 100%;
+  }
+
+  &:hover > div {
+    filter: unset;
+  }
+
+  &[active] > div {
+    filter: unset;
+  }
+}
+.default_style {
+  flex-wrap: wrap;
+  width: 100%;
+}
+.horizontal-style-icon-tab {
+  @extend .default_style;
+  display: inline-flex;
+
+  .chart_wrapper {
+    @extend .chart_wrapper;
+  }
+
+  &.vertical-style-icon-tab {
+    @extend .default_style;
+    display: inline-grid;
+
+    .chart_wrapper {
+      @extend .chart_wrapper;
+    }
+  }
+}

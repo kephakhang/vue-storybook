@@ -1,0 +1,5 @@
+.spotlight {
+  background: white;
+  position: relative;
+  z-index: 1000000;
+}

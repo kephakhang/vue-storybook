@@ -1,0 +1,16 @@
+diff --git a/.npmignore b/.npmignore
+deleted file mode 100644
+index c88bd258356f06f9891d700c8c389865448053d7..0000000000000000000000000000000000000000
+diff --git a/types/MicrosoftMaps/Microsoft.Maps.d.ts b/types/MicrosoftMaps/Microsoft.Maps.d.ts
+index 7073fa5ec5d8f6735c47977397b0b095c7dd9a72..650f30de9a2d2574a58fd340d37914e4b6ab1aa0 100644
+--- a/types/MicrosoftMaps/Microsoft.Maps.d.ts
++++ b/types/MicrosoftMaps/Microsoft.Maps.d.ts
+@@ -606,7 +606,7 @@ declare module Microsoft.Maps {
+         point: Point;
+ 
+         /** The object that triggered the event. */
+-        target: Map | IPrimitive;
++        target: Map | IPrimitive | Pushpin;
+ 
+         /** The type of the object that the event is attached to. Valid values include the following: ‘map’, 'layer', ‘polygon’, ‘polyline’, or ‘pushpin’ */
+         targetType: string;

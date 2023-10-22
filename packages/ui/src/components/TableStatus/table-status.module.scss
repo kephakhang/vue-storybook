@@ -1,0 +1,93 @@
+* {
+  .center_align {
+    display: flex;
+    align-items: center;
+
+    .default {
+      padding: 1px;
+      height: 13px;
+      width: 13px;
+      border-radius: 13px;
+      margin-right: 4px;
+      flex-shrink: 0;
+
+      &.red {
+        background: #e34537;
+      }
+      &.blue {
+        background: #0075ff;
+      }
+      &.light_blue {
+        background: #3491ff;
+      }
+      &.purple {
+        background: #c25fd3;
+      }
+      &.gray {
+        background: #8b8b8b;
+      }
+      &.light_gray {
+        background: #c4c4c4;
+      }
+      &.dark_gray {
+        background: #4b4b4b;
+      }
+      &.purple_gray {
+        background: #aca6bc;
+      }
+      &.yellow {
+        background: #f7cc57;
+      }
+      &.black {
+        background: #000000;
+      }
+      &.green {
+        background: #41ce77;
+      }
+      &.orange {
+        background: #ed772f;
+      }
+      &.brown {
+        background: #7a2e17;
+      }
+      &.light_orange {
+        background: #ffb371;
+      }
+      &.black_bordered_gray {
+        background: #c4c4c4;
+        border: 1px solid #4b4b4b;
+      }
+      &.red_bordered_gray {
+        background: #c4c4c4;
+        border: 1px solid #db3b21;
+      }
+      &.black_bordered_white {
+        background: #ffffff;
+        border: 1px solid #4b4b4b;
+      }
+      &.red_dashed_white {
+        background: url("~assets/images/icon/sensor-detached-icon.svg")
+          no-repeat;
+      }
+    }
+
+    .label_styles {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #4b4b4b;
+      font-size: 14.66px;
+      line-height: 17.49px;
+    }
+  }
+
+  box-sizing: border-box;
+
+  &::before {
+    box-sizing: border-box;
+  }
+
+  &::after {
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build", "switch:vue3"],
+      "outputs": ["dist/**"]
+    },
+    "lint": {},
+    "dev": {
+      "dependsOn": ["switch:vue3"],
+      "cache": false,
+      "persistent": true
+    },
+    "dev:compat": {
+      "dependsOn": ["switch:vue3"],
+      "cache": false,
+      "persistent": true
+    },
+    "storybook": {
+      "dependsOn": ["switch:vue2"],
+      "cache": false
+    },
+    "clean": {
+      "cache": false
+    },
+    "build:ui": {
+      "dependsOn": ["switch:vue2"],
+      "outputs": ["dist/**"]
+    },
+    "build:storybook": {
+      "dependsOn": ["switch:vue2"],
+      "outputs": ["docs-build/**"]
+    },
+    "switch:vue2": {
+      "cache": false
+    },
+    "switch:vue3": {
+      "cache": false
+    }
+  }
+}

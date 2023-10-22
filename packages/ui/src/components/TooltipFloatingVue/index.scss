@@ -1,0 +1,42 @@
+$tooltip_border_radius: 3px;
+$tooltip_padding: 8px;
+$default_text_size: 15px;
+$small_text_size: 12px;
+$box_shadow: 0px 1px 4px 0px #00000040;
+$tooltip_dark_bg: #4e4a4a;
+$tooltip_dark_text: #ffffff;
+$tooltip_light_bg: #ffffff;
+$tooltip_light_text: #4e4a4a;
+
+/* common theme =========================================================== */
+.v-popper__inner {
+  border-radius: $tooltip_border_radius !important;
+}
+
+/* light theme =========================================================== */
+.v-popper--theme-light .v-popper__inner {
+  background: $tooltip_light_bg;
+  color: $tooltip_light_text;
+  font-size: $default_text_size;
+  padding: $tooltip_padding;
+  box-shadow: $box_shadow;
+}
+
+.v-popper--theme-light .v-popper__arrow-inner {
+  border-color: $tooltip_light_bg;
+}
+
+/* dark theme =========================================================== */
+.v-popper--theme-dark .v-popper__inner {
+  background: $tooltip_dark_bg;
+  color: $tooltip_dark_text;
+  font-size: $small_text_size;
+  padding: $tooltip_padding;
+  border: none;
+}
+.v-popper--theme-dark .v-popper__arrow-inner {
+  border-color: $tooltip_dark_bg;
+}
+.v-popper--theme-dark .v-popper__arrow-outer {
+  display: none;
+}

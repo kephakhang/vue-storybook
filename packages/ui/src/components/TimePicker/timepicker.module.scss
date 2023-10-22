@@ -1,0 +1,155 @@
+$primary-color: rgb(52, 145, 251);
+$secondary-color: #000000;
+$hover-color: #0e65c7;
+$border-color: rgb(144, 144, 144);
+$background-color: #ffffff;
+$box-shadow-color: rgb(0 0 0 / 16%);
+$selected-background-color: #e6f7ff;
+$scrollbar-background-color: #fff;
+$scrollbar-thumb-color: #f5f5f5;
+$text-color: #000000;
+$font-size: 0.916rem;
+$line-height: 1.06rem;
+$font-family: "Helvetica Neue", serif;
+
+.dropdown_container {
+  position: relative;
+
+  .time_dropdown {
+    color: $primary-color;
+    text-decoration: none;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-style: normal;
+    line-height: 0.81rem;
+    text-align: right;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 0.7rem;
+    padding: 0.75rem;
+    width: unset;
+
+    .time_dropdown_disabled {
+      cursor: not-allowed;
+    }
+
+    .span_height {
+      height: 0.75rem;
+      font-weight: 400;
+      font-size: $font-size;
+    }
+
+    .bonus_time {
+      color: $secondary-color;
+      font-size: 0.69rem;
+      position: absolute;
+      right: 10%;
+      top: 0.13rem;
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+
+  .time_dropdown_btn {
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    border: 0.03rem solid $border-color;
+    border-radius: 3px;
+    color: rgb(75, 75, 75);
+    flex: 0 0 auto;
+    order: 0;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: right;
+
+    &:hover {
+      background: #daeeff;
+      border-radius: 3px;
+      border: 0.03rem solid #3585e5;
+      color: #3585e5;
+    }
+
+    &[active] {
+      background: #daeeff;
+      border-radius: 3px;
+      border: 0.03rem solid #3585e5;
+      color: #3585e5;
+    }
+  }
+
+  .dropdown_menu {
+    background: $background-color;
+    z-index: 1;
+    border: unset;
+    cursor: pointer;
+    box-shadow: 0 0.19rem 0.38rem $box-shadow-color;
+    border-radius: 3px;
+    position: absolute;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: center;
+    div {
+      display: flex;
+
+      .hour_dropdown_col {
+        overflow-y: auto;
+        overflow-x: clip;
+        max-height: 13.44rem;
+
+        &:last-child {
+          margin-left: 0.06rem;
+        }
+
+        &::-webkit-scrollbar {
+          width: 0.25rem;
+          background-color: $scrollbar-background-color;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: $scrollbar-thumb-color;
+        }
+
+        .hour_dropdown {
+          margin-left: 0.12rem;
+          margin-top: 0.12rem;
+          list-style: none;
+          padding: 0;
+          width: 3.12rem;
+
+          .selected_item {
+            background-color: $selected-background-color;
+          }
+
+          .dropdown_item {
+            display: block;
+            color: $text-color;
+            padding-top: 0.69rem;
+            padding-bottom: 0.69rem;
+            margin-bottom: 0.12rem;
+            &:hover {
+              background-color: $selected-background-color;
+            }
+
+            .day_plus {
+              color: $secondary-color;
+              font-size: 0.69rem;
+              position: relative;
+              right: 0.4rem;
+              top: -0.81rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

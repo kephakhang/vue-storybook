@@ -1,0 +1,90 @@
+.inner-modal-container {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin-left: -103px;
+  z-index: 9999;
+  width: 206px;
+  height: 106px;
+  background: #4b4b4b;
+  border-radius: 3px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+
+  & > div:not(.btn-group) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 20px;
+  }
+
+  .btn-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 0;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      height: 22px;
+      width: 50px;
+      border-radius: 1px;
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 14.66px;
+      background: #565656;
+
+      &.selected {
+        border: 1px solid #3491ff;
+        border-radius: 1px;
+        background: #4b4b4b;
+      }
+
+      &:hover {
+        background: #4b4b4b;
+      }
+
+      &.disabled {
+        color: #c4c4c4;
+        background: none;
+        cursor: default;
+        pointer-events: none;
+        background: #4b4b4b;
+      }
+    }
+  }
+
+  .modal-arrow-icon {
+    display: block;
+    cursor: pointer;
+    width: 11px;
+    height: 11px;
+
+    // TODO: disabled 아이콘만 있음. icon button component로 교체 필요.
+    &.-left {
+      background: url("~assets/images/icon/calendar-left-arrow-square-small.svg")
+        no-repeat center;
+    }
+
+    // TODO: disabled 아이콘만 있음. icon button component로 교체 필요.
+    &.-right {
+      background: url("~assets/images/icon/calendar-right-arrow-square-small.svg")
+        no-repeat center;
+    }
+
+    &:hover {
+      filter: brightness(90%);
+    }
+
+    &.disabled {
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+$background_color: #deedff;
+$text_color: #4b4b4b;
+
+@mixin dimension($width, $height) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $width;
+  height: $height;
+}
+
+.chips-container {
+  @include dimension(fit-content, 1.31rem);
+  background: $background_color;
+  gap: 0.31rem;
+  padding: 0 0.31rem 0 0.5rem;
+  border-radius: 0.19rem;
+  &[inactive] {
+    padding: 0 0.5rem;
+  }
+
+  span {
+    color: $text_color;
+    font-size: 0.69rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.31rem;
+    cursor: text;
+  }
+
+  div {
+    @include dimension(0.69rem, 0.69rem);
+    cursor: pointer;
+    img {
+      content: url("~assets/images/common-component/close-icon-small-black-thin.svg");
+    }
+    &:hover {
+      img {
+        content: url("~assets/images/common-component/close-icon-small-black-bold.svg");
+      }
+    }
+  }
+}

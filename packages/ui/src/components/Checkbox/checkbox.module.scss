@@ -1,0 +1,234 @@
+$active_state_color: #3585e5;
+$disabled_state_color: #c4c4c4;
+$radio_button_border_color: #909090;
+$checklist_border_color: #979797;
+$checkbox_active_color: #888888;
+$checkbox_disabled_color: #a5a5a5;
+$label_color: #4b4b4b;
+
+@mixin button_inner($color, $border_radius, $background, $border_width) {
+  border: $border_width solid $color;
+  background: $background;
+  border-radius: $border_radius;
+}
+
+* {
+  .center_align {
+    display: flex;
+    align-items: center;
+
+    .default_btn {
+      border-radius: 0.19rem;
+      height: 0.94rem;
+      width: 0.94rem;
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0.13rem;
+      position: static;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &.radio_button {
+        border: 0.06rem solid $radio_button_border_color;
+        border-radius: 0.63rem;
+        padding: 0.06rem;
+
+        &.default {
+          width: 0.94rem;
+          height: 0.94rem;
+        }
+
+        &.small {
+          width: 0.63rem;
+          height: 0.63rem;
+        }
+
+        &:hover {
+          border: 0.06rem solid $active_state_color;
+          border-radius: 0.63rem;
+        }
+      }
+
+      &.radio_button[active] {
+        border: 0.06rem solid $active_state_color;
+
+        .radio_button_inner {
+          width: 100%;
+          height: 100%;
+          @include button_inner(
+            $active_state_color,
+            0.63rem,
+            $active_state_color,
+            0.06rem
+          );
+        }
+      }
+
+      &.radio_button[disabled] {
+        border: 0.06rem solid $disabled_state_color;
+        pointer-events: none;
+      }
+
+      &.radio_button[active][disabled] {
+        .radio_button_inner {
+          @include button_inner(
+            $disabled_state_color,
+            0.63rem,
+            $disabled_state_color,
+            0.06rem
+          );
+          pointer-events: none;
+        }
+      }
+
+      &.check_list {
+        border: 0.06rem solid $checklist_border_color;
+        border-radius: 0.06rem;
+        padding: 0.13rem;
+
+        &.small {
+          padding: 0.06rem;
+          width: 0.63rem;
+          height: 0.63rem;
+        }
+
+        &.default {
+          padding: 0.13rem;
+        }
+
+        &:hover {
+          border: 0.06rem solid $active_state_color;
+          border-radius: 0.06rem;
+        }
+      }
+
+      &.check_list[active] {
+        border: 0.06rem solid $active_state_color;
+
+        .check_list_inner {
+          width: 100%;
+          height: 100%;
+          @include button_inner(
+            $active_state_color,
+            0.06rem,
+            $active_state_color,
+            0.06rem
+          );
+        }
+      }
+
+      &.check_list[active][disabled] {
+        .check_list_inner {
+          @include button_inner(
+            $disabled_state_color,
+            0.06rem,
+            $disabled_state_color,
+            0.06rem
+          );
+          pointer-events: none;
+        }
+      }
+
+      &.check_list[disabled] {
+        border: 0.06rem solid $disabled_state_color;
+        border-radius: 0.06rem;
+        pointer-events: none;
+      }
+
+      &.checkbox[active] {
+        @include button_inner(
+          $checkbox_active_color,
+          0.06rem,
+          $checkbox_active_color,
+          0.03rem
+        );
+        content: url("~assets/images/icon/checkbox-selected.svg");
+      }
+      &.checkbox[disabled] {
+        @include button_inner(
+          $checkbox_disabled_color,
+          0.06rem,
+          $checkbox_disabled_color,
+          0.03rem
+        );
+        content: url("~assets/images/icon/checkbox-unselected.svg");
+        pointer-events: none;
+      }
+
+      &.checkbox {
+        border: 0.03rem solid $checkbox_active_color;
+        border-radius: 0.06rem;
+        padding: 0.13rem 0.08rem;
+
+        &:hover {
+          content: url("~assets/images/icon/checkbox-tick.svg");
+          background: transparent;
+        }
+
+        &.small {
+          padding: 0.06rem;
+          width: 0.63rem;
+          height: 0.63rem;
+
+          .icon_size {
+            width: 0.44rem;
+            height: 0.33rem;
+          }
+        }
+      }
+
+      .small {
+        width: 0.63rem;
+        height: 0.63rem;
+      }
+
+      .icon_size {
+        width: 0.56rem;
+        height: 0.56rem;
+      }
+    }
+
+    label {
+      .label_styles {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: $label_color;
+
+        &.large {
+          font-size: 0.92rem;
+          line-height: 1.06rem;
+        }
+
+        &.small {
+          font-size: 0.7rem;
+          line-height: 1.5rem;
+        }
+      }
+
+      .small {
+        margin-left: 0.69rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.7rem;
+        line-height: 0.81rem;
+      }
+
+      .large {
+        margin-left: 0.69rem;
+      }
+    }
+  }
+
+  box-sizing: border-box;
+
+  &::before {
+    box-sizing: border-box;
+  }
+
+  &::after {
+    box-sizing: border-box;
+  }
+}

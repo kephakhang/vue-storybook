@@ -1,0 +1,106 @@
+$background_color: #ffffff;
+$toggle_off_background: #595959;
+$toggle_on_background: #3585e5;
+$button_off_color: #c4c4c4;
+$button_on_color: #4b4b4b;
+$disabled_color: #d9d9d9;
+$font_family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@mixin button_state($color) {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.94rem;
+  color: $color;
+}
+
+@mixin label-size($width, $height, $after-width) {
+  width: $width;
+  height: $height;
+
+  &:after {
+    width: $after-width;
+    height: $after-width;
+  }
+
+  &:active {
+    &:after {
+      width: 1.56rem;
+      border-radius: 50%;
+    }
+  }
+}
+
+.d_flex {
+  display: flex;
+  p {
+    font-family: $font_family;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+  div {
+    display: flex;
+    input {
+      &[type="checkbox"] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+        &:checked {
+          + {
+            label {
+              background: $toggle_on_background;
+              outline: 0.06rem solid $toggle_on_background;
+              &:after {
+                left: calc(100% - 0.09rem);
+                transform: translateX(-100%);
+                background: $background_color;
+              }
+            }
+          }
+        }
+      }
+    }
+    label {
+      cursor: pointer;
+      text-indent: -625rem;
+      margin: auto 0.63rem;
+      outline: 0.06rem solid $toggle_off_background;
+      display: block;
+      border-radius: 6.25rem;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0.09rem;
+        left: 0.09rem;
+        background: $toggle_off_background;
+        border-radius: 5.63rem;
+        transition: 0.4s;
+      }
+    }
+  }
+  .btn_off {
+    @include button_state($button_off_color);
+  }
+  .btn_on {
+    @include button_state($button_on_color);
+  }
+  .default_off {
+    color: $button_off_color !important;
+  }
+  .disable_label {
+    pointer-events: none;
+    background: $disabled_color !important;
+    outline: $disabled_color solid 0.06rem !important;
+    &:after {
+      background: $background_color !important;
+    }
+  }
+  .default_size_label {
+    @include label-size(2.69rem, 0.88rem, 0.69rem);
+  }
+  .large_size_label {
+    @include label-size(3.31rem, 1.25rem, 1.06rem);
+  }
+}

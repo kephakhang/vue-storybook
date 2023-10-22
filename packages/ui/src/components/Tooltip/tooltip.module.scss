@@ -1,0 +1,102 @@
+$tooltip_black: #4b4b4b;
+$tooltip_white: #ffffff;
+$box_shadow: rgba(0, 0, 0, 0.18);
+
+@mixin main_tooltip($background, $color) {
+  font-size: 0.7rem;
+  background: $background;
+  color: $color;
+  box-shadow: 0 0.06rem 0.13rem $box_shadow;
+  text-align: center;
+  border-radius: 0.19rem;
+  padding: 0.38rem 0.5rem;
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+@mixin tooltip_styles($rotation, $color) {
+  content: "";
+  position: absolute;
+  transform: $rotation;
+  border-width: 0.25rem;
+  border-style: solid;
+  background: $color;
+  border-color: $color transparent transparent transparent;
+  box-shadow: 0.06rem -0.06rem 0.13rem 0 $box_shadow;
+}
+
+.tooltip {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  .contextWrapper {
+    width: fit-content;
+    height: auto;
+  }
+
+  .main_tooltip {
+    .tooltip_text_white {
+      @include main_tooltip($tooltip_white, $tooltip_black);
+
+      &.top::after {
+        bottom: -0.19rem;
+        @include tooltip_styles(rotate(135deg), $tooltip_white);
+      }
+
+      &.bottom::after {
+        top: -0.19rem;
+        @include tooltip_styles(rotate(-45deg), $tooltip_white);
+      }
+
+      &.left::after {
+        left: -0.19rem;
+        @include tooltip_styles(rotate(-135deg), $tooltip_white);
+      }
+
+      &.right::after {
+        right: -0.19rem;
+        @include tooltip_styles(rotate(47deg), $tooltip_white);
+      }
+    }
+
+    .tooltip_text_black {
+      @include main_tooltip($tooltip_black, $tooltip_white);
+
+      &.top::after {
+        bottom: -0.19rem;
+        @include tooltip_styles(rotate(135deg), $tooltip_black);
+      }
+
+      &.bottom::after {
+        top: -0.19rem;
+        @include tooltip_styles(rotate(-45deg), $tooltip_black);
+      }
+
+      &.left::after {
+        left: -0.19rem;
+        @include tooltip_styles(rotate(-135deg), $tooltip_black);
+      }
+
+      &.right::after {
+        right: -0.19rem;
+        @include tooltip_styles(rotate(47deg), $tooltip_black);
+      }
+    }
+  }
+
+  &:hover {
+    .tooltip_text_white {
+      display: flex;
+    }
+
+    .tooltip_text_black {
+      display: flex;
+    }
+  }
+}
