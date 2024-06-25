@@ -1,6 +1,6 @@
 # eMoldino Frontend
 
-This is an monorepo for eMoldino using Turborepo.
+This is an monorepo using Turborepo.
 
 ## What's inside?
 
@@ -15,7 +15,7 @@ This Turborepo includes the following packages and apps:
 
 ## Migration Guide
 
-If you're using old version (emlodino-ui-components), check this [Migration Guide](https://docs.google.com/presentation/d/1wGHsS03W1hZt5AKlC6Zac_6kP_pkYP5aYqZZYVAbM7A/edit#slide=id.p).
+If you're using old version (ui-components), check this [Migration Guide](https://docs.google.com/presentation/d/1wGHsS03W1hZt5AKlC6Zac_6kP_pkYP5aYqZZYVAbM7A/edit#slide=id.p).
 
 ## Project setup
 

@@ -11,6 +11,11 @@ const isStaticMode = processArgs[index + 1] === "static";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    hmr: {
+      overlay: false
+    }
+  },
   plugins: [
     createVuePlugin(),
     tsconfigPaths({

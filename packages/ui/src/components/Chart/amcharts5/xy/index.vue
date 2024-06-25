@@ -633,10 +633,10 @@ export default defineComponent({
     const setLineSeriesBullet = (dataBinder, index) => {
       let lineBulletTemplate = am5.Template.new(root.value, {});
 
-      setLineSeriesBulletClickHandler();
+      // setLineSeriesBulletClickHandler(lineBulletTemplate);
       setLineSeriesBulletSettings();
       setLineSeriesBullets(dataBinder, lineBulletTemplate, index);
-      setLineSeriesBulletTooltipHTMLAdapter(lineBulletTemplate);
+      // setLineSeriesBulletTooltipHTMLAdapter(lineBulletTemplate);
       setLineSeriesStroke(dataBinder);
       setLineSeriesFill();
       setLineSeriesData();
@@ -660,7 +660,7 @@ export default defineComponent({
     /**
      * lineBulletSettings 를 설정합니다.
      */
-    const setLineSeriesBulletSettings = () => {
+    const setLineSeriesBulletSettings = (lineBulletTemplate) => {
       lineBulletSettings.value = {
         showTooltipOn: "hover",
         strokeWidth: lineSetComputed.value.bullet.strokeWidth,
